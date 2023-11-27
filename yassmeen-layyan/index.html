@@ -8,22 +8,66 @@
     </style>
   </head>
   </head>
-  <body>
-    <header>
-      <h1>Yasmeen</h1>
-    </header>
+    <body style="background-color: thistle;>
+    <header style="text-align: center;">
+    <div style="margin: 0 auto; text-align: center;">
+        <h1 style="font-weight: bold;">Yasmeen</h1>
+        <img src='WhatsApp Image 2023-01-23 at 10.41.34.jpeg' width='250' height='200' />
+    </div>
+</header>
+
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>coffee lover</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        Reading
-      </section>
+        <section aria-labelledby="bio-heading">
+            <h2 id="bio-heading">Bio</h2>
+            <ul style="padding-left: 20px;">
+                <li style="margin-bottom: 5px; list-style-type: disc;">Coffee lover ☕️</li>
+                <li style="margin-bottom: 5px; list-style-type: disc;">Music 🎵</li>
+            </ul>
+        </section>
+        
+  
+        <section aria-labelledby="hobbies-heading">
+            <h2 id="hobbies-heading">Hobbies</h2>
+            <ul style="padding-left: 20px;">
+                <li style="margin-bottom: 5px; list-style-type: disc;">Reading 📚</li>
+                <li style="margin-bottom: 5px; list-style-type: disc;">TikTok 📲</li>
+                <li style="margin-bottom: 5px; list-style-type: disc;">Travelling ✈️</li>
+            </ul>
+        </section>
+        <!DOCTYPE html>
+<html>
+<head>
+  <title>Study</title>
+  <style>
+    #hiddenContent {
+      display: none;
+      margin-top: 20px;}
+    .icon {font-size: 30px;
+      color: #3498db; /* Change the color to your preference */
+      cursor: pointer;}
+  </style>
+</head>
+<body>
+  <i class="icon" onclick="showContent()">📘</i>
+  <p id="hiddenContent">Studying content strategy</p>
+  
+  <script>
+    function showContent() {var hiddenContent = document.getElementById("hiddenContent");
+      if (hiddenContent.style.display === "none") {hiddenContent.style.display = "block";
+      } else {
+        hiddenContent.style.display = "none";
+      }
+    }
+  </script>
+</body>
+</html>
+
+
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
-        Content processing operator
+        <p>Content Processing operator</p>
+        <a href="https://www.linkedin.com/in/yasmeen-alayyan-286bb8139/">Visit my LinkedIn Profile</a>
+
       </section>
     </main>
     <script>
