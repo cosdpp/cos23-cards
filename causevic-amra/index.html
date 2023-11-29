@@ -2,54 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Amra’s Card</title>
+  <title>Amra’s CV</title>
   <style>
     /* Styling */
     body {
       font-family: 'Arial', sans-serif;
       line-height: 1.6;
       margin: 0;
-      padding: 0;
+      padding: 20px;
       background-color: #ffd1dc; /* Pastel pink background color */
       color: #333;
-      text-align: center; /* Center align content */
     }
     header {
-      background-color: #f2f2f2;
-      padding: 20px 0;
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
     }
     h1 {
       margin: 0;
       color: #333;
-      font-family: 'Courier New', monospace; /* Different font */
+      font-size: 32px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
     }
     section {
-      margin-bottom: 40px; /* Increase spacing between sections */
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       padding: 20px;
-      background-color: #fff; /* White section background */
-      border-radius: 15px; /* Rounded corners for sections */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-      text-align: left; /* Left align section content */
+      margin-bottom: 20px;
     }
     h2 {
       color: #333;
-      font-family: 'Arial', sans-serif; /* Reset font for section titles */
+      font-size: 24px;
+      margin-bottom: 10px;
+      border-bottom: 2px solid #ffd1dc; /* Pastel pink underline */
+      padding-bottom: 5px;
     }
-    footer {
-      padding: 20px 0;
-      background-color: #f2f2f2;
+    p {
+      margin: 0;
+      color: #666;
+      font-size: 16px;
+      line-height: 1.4;
     }
     img {
-      max-width: 200px; /* Adjust the maximum width of the photo */
+      max-width: 150px;
       height: auto;
       display: block;
-      margin: 0 auto; /* Center the image */
-      border: 5px solid #ffd1dc; /* Pink border around the photo */
-      border-radius: 50%; /* Rounded corners for the image */
-      margin-bottom: 20px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
-    .emojis {
-      font-size: 24px; /* Increase emoji size */
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+    li {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+    footer {
+      text-align: center;
+      color: #666;
+    }
+    .highlight {
+      background-color: #ffe6f0; /* Lighter pink for highlight */
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 15px;
     }
   </style>
 </head>
@@ -57,66 +80,62 @@
   <header>
     <h1>Amra Causevic</h1>
   </header>
-  <main>
-    <section aria-labelledby="bio-heading">
-      <img src="DSC03139-2.jpg" alt="Amra's Photo"> <!-- Replace "your_photo.jpg" with your actual photo file -->
-      <h2 id="bio-heading">Bio <span class="emojis">&#x1F4C6;&#x1F4CD;</span></h2> <!-- Calendar and location emojis -->
-      <p>Date of Birth: 27.07.1995.</p>
-      <p>Location: Graz, Austria</p>
-    </section>
-    <section aria-labelledby="hobbies-heading">
-      <h2 id="hobbies-heading">Hobbies <span class="emojis">&#x1F373;&#x1F3CB;&#x1F4D6;</span></h2> <!-- Cooking, gym, and reading emojis -->
-      <p>Cooking &#x1F373;</p>
-      <p>Gym &#x1F3CB;</p>
-      <p>Reading... &#x1F4D6;</p>
-    </section>
-    <section aria-labelledby="workxp-heading">
-      <h2 id="workxp-heading">Work Experience</h2>
-      <p>Freelance content creator and social media manager</p>
-      <p>Event manager assistant</p>
-      <p>Student assistant</p>
-    </section>
-    <section aria-labelledby="education-heading">
-      <h2 id="education-heading">Education</h2>
-      <p>University of Zagreb - BA in Political Science (2015-2019)</p>
-      <p>MA of Southeastern European Studies (in progress)</p>
-      <p>MA Content Strategy (Starting Sept, 2023)</p>
-    </section>
-    <section aria-labelledby="language-heading">
-      <h2 id="language-heading">Language Skills</h2>
-      <p>English - Proficient</p>
-      <p>German - Intermediate</p>
-      <p>Turkish - Proficient</p>
-      <p>Croatian - Mother tongue</p>
-      <!-- Add more language skills as needed -->
-    </section>
-    <section aria-labelledby="skills-heading">
-      <h2 id="skills-heading">Skills</h2>
-      <ul>
-        <li>Social Media Management</li>
-        <li>Content Creation</li>
-        <li>Copywriting</li>
-        <li>MS Office</li>
-        <li>Time Management</li>
-      </ul>
-    </section>
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Projects or Achievements</h2>
-      <p>Founder of Diplomatic Club at University of Political Science in Zagreb.</p>
-      <!-- Add more projects or achievements -->
-    </section>
-  </main>
+  <section aria-labelledby="bio-heading">
+    <img src="DSC03139-2.jpg" alt="Amra's Photo">
+    <h2 id="bio-heading">Bio</h2>
+    <p>Date of Birth: 27.07.1995</p>
+    <p>Location: Graz, Austria</p>
+    <div class="highlight">
+      <p>A highly motivated individual with a passion for content creation, social media management, and international relations.</p>
+    </div>
+  </section>
+  <section aria-labelledby="hobbies-heading">
+    <h2 id="hobbies-heading">Hobbies</h2>
+    <p>Cooking</p>
+    <p>Gym</p>
+    <p>Reading</p>
+  </section>
+  <section aria-labelledby="workxp-heading">
+    <h2 id="workxp-heading">Work Experience</h2>
+    <p>Freelance content creator and social media manager</p>
+    <p>Event manager assistant</p>
+    <p>Student assistant</p>
+  </section>
+  <section aria-labelledby="education-heading">
+    <h2 id="education-heading">Education</h2>
+    <p>University of Zagreb - BA in Political Science (2015-2019)</p>
+    <p>MA of Southeastern European Studies (in progress)</p>
+    <p>MA Content Strategy (Starting Sept, 2023)</p>
+  </section>
+  <section aria-labelledby="language-heading">
+    <h2 id="language-heading">Language Skills</h2>
+    <ul>
+      <li>English - Proficient</li>
+      <li>German - Intermediate</li>
+      <li>Turkish - Proficient</li>
+      <li>Croatian - Native</li>
+    </ul>
+  </section>
+  <section aria-labelledby="skills-heading">
+    <h2 id="skills-heading">Skills</h2>
+    <ul>
+      <li>Social Media Management</li>
+      <li>Content Creation</li>
+      <li>Copywriting</li>
+      <li>MS Office</li>
+      <li>Time Management</li>
+    </ul>
+  </section>
+  <section aria-labelledby="projects-heading">
+    <h2 id="projects-heading">Projects or Achievements</h2>
+    <p>Founder of Diplomatic Club at University of Political Science in Zagreb.</p>
+  </section>
   <footer>
     <p>Contact:</p>
     <ul>
       <li>Email: amra.causevic@edu.fh-joanneum.at</li>
       <li>Instagram: @amrica277</li>
-      <!-- Add more contact information as needed -->
     </ul>
   </footer>
-  <script>
-    /* Scripting */
-    // You can add JavaScript functionality here if needed
-  </script>
 </body>
 </html>
