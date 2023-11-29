@@ -6,68 +6,89 @@
   <style>
     /* Styling */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       line-height: 1.6;
       margin: 0;
       padding: 0;
       background-color: #ffd1dc; /* Pastel pink background color */
       color: #333;
+      text-align: center; /* Center align content */
     }
     header {
       background-color: #f2f2f2;
-      text-align: center;
       padding: 20px 0;
     }
     h1 {
       margin: 0;
       color: #333;
+      font-family: 'Courier New', monospace; /* Different font */
     }
     section {
-      margin-bottom: 20px;
+      margin-bottom: 40px; /* Increase spacing between sections */
       padding: 20px;
       background-color: #fff; /* White section background */
+      border-radius: 15px; /* Rounded corners for sections */
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      text-align: left; /* Left align section content */
     }
     h2 {
       color: #333;
+      font-family: 'Arial', sans-serif; /* Reset font for section titles */
     }
     footer {
-      text-align: center;
       padding: 20px 0;
       background-color: #f2f2f2;
     }
     img {
-      max-width: 100%;
+      max-width: 200px; /* Adjust the maximum width of the photo */
       height: auto;
       display: block;
-      margin: 0 auto;
+      margin: 0 auto; /* Center the image */
+      border: 5px solid #ffd1dc; /* Pink border around the photo */
       border-radius: 50%; /* Rounded corners for the image */
       margin-bottom: 20px;
+    }
+    .emojis {
+      font-size: 24px; /* Increase emoji size */
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Amra</h1>
+    <h1>Amra Causevic</h1>
   </header>
   <main>
     <section aria-labelledby="bio-heading">
-      <img src="DSC03139-2" alt="Amra's Photo"> <!-- Replace "your_photo.jpg" with your actual photo file -->
-      <h2 id="bio-heading">Bio</h2>
-      <p>From Croatia, living in Graz for the last 3 years. Tea and chocolate lover.</p>
+      <img src="DSC03139-2.jpg" alt="Amra's Photo"> <!-- Replace "your_photo.jpg" with your actual photo file -->
+      <h2 id="bio-heading">Bio <span class="emojis">&#x1F4C6;&#x1F4CD;</span></h2> <!-- Calendar and location emojis -->
+      <p>Date of Birth: Your DOB</p>
+      <p>Location: Graz, Austria</p>
     </section>
     <section aria-labelledby="hobbies-heading">
-      <h2 id="hobbies-heading">Hobbies</h2>
-      <p>Cooking, gym, drinking tea, reading...</p>
+      <h2 id="hobbies-heading">Hobbies <span class="emojis">&#x1F373;&#x1F3CB;&#x1F4D6;</span></h2> <!-- Cooking, gym, and reading emojis -->
+      <p>Cooking &#x1F373;</p>
+      <p>Gym &#x1F3CB;</p>
+      <p>Reading... &#x1F4D6;</p>
     </section>
     <section aria-labelledby="workxp-heading">
       <h2 id="workxp-heading">Work Experience</h2>
       <p>Freelance content creator and social media manager</p>
+      <p>Event manager assistant</p>
+      <p>Student assistant</p>
     </section>
     <section aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
-      <p>BA in Political Science</p>
-      <p>Date Range (e.g., 2015 - 2019)</p>
-      <p>Finishing one MA, and started another one</p>
+      <p>University of Zagreb - BA in Political Science (2015-2019)</p>
+      <p>MA of Southeastern European Studies (in progress)</p>
+      <p>MA Content Strategy (Starting Sept, 2023)</p>
+    </section>
+    <section aria-labelledby="language-heading">
+      <h2 id="language-heading">Language Skills</h2>
+      <p>English - Proficient</p>
+      <p>German - Intermediate</p>
+      <p>Turkish - Proficient</p>
+      <p>Croatian - Mother tongue</p>
+      <!-- Add more language skills as needed -->
     </section>
     <section aria-labelledby="skills-heading">
       <h2 id="skills-heading">Skills</h2>
@@ -75,13 +96,14 @@
         <li>Social Media Management</li>
         <li>Content Creation</li>
         <li>Copywriting</li>
-        <li>Google Ads</li> 
+        <li>MS Office</li>
+        <li>Time Management</li>
       </ul>
     </section>
     <section aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects or Achievements</h2>
-      <p>Freelance work on different marketing campaigns</p>
-  
+      <p>Founder of Diplomatic Club at University of Political Science in Zagreb.</p>
+      <!-- Add more projects or achievements -->
     </section>
   </main>
   <footer>
