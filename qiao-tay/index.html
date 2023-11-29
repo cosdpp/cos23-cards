@@ -2,30 +2,100 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <title>Wei’s website</title>
+    <link href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet'>
     <style>
-      /* Styling */
+    /* Styling */
+          html {}
+      body {
+          font-family: 'Open Sans';font-size: 14px;
+      }
+      /* responsive 2 column grid */
+        /* container */
+        .responsive-two-column-grid {
+            display:block;
+        }
+
+        /* columns */
+        .responsive-two-column-grid > * {
+            padding:1rem;
+        }
+
+        /* tablet breakpoint */
+        @media (min-width:768px) {
+            .responsive-two-column-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
     </style>
-  </head>
   </head>
   <body>
     <header>
-      <h1>@@MyName</h1>
+      <h1>Qiao Wei Tay: Content strategist</h1>
+      <img src="qwei.jpeg">
     </header>
+
+    <nav>
+      
+    </nav>
     <main>
       <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <h2 id="bio-heading">Hello, you can call me Wei 👋</h2>
+          <p>I enjoy crafting the strategy to plan, produce and sustain engaging content. I'm born and raised in sunny Singapore 🇸🇬.</p>
+            <p>Currently, I am:<br>
+            <ul>
+            <li>Working on enterprise UX projects for a digital consultancy (PebbleRoad)</li>
+            <li>Based in Graz 🇦🇹, studying Content Strategy at FH Joanneum</li>
+            </ul>
+          </p>
       </section>
       <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <h2 id="workxp-heading">Work experience</h2>
+        <div class="responsive-two-column-grid">
+        <div><h3>Content strategist, <a href="https://www.pebbleroad.com/">PebbleRoad</a><br>
+        <small>(2020–Present)</small></h3>
+        <p>
+          <ul>
+            <li><strong>Content strategy</strong>: Plan, create and manage sustainable content that meets both client and user needs.</li>
+            <li><strong>Collaborate across disciplines</strong>: I work with designers, researchers and product owners to solve UX problems through design thinking.</li>
+            <li><strong>Project management</strong>: For some projects, I double up as a project lead/manager. I lead the design thinking process and help my team to prioritise tasks, adapt to changes, deepen relationships with clients, and collaborate with partners.
+          </ul></div>
+          <div><h3>Content strategist, Tuber<br>
+          <small>(2014–2020)</small></h3>
+          <ul>
+            <li><strong>Content consultancy</strong>: Planned and produced digital and print content including website copy, multimedia stories, marketing copy, magazines, annual reports and coffee table books.</li>
+            <blockquote>⭐ <a href="https://www.clippings.me/qwtay">Read my published works</a></blockquote>
+            <li><strong>Project management</strong>: Juggled competing timelines, managed editorial budgets, sourced and worked with external partners.</p></div>
+      </div>
       </section>
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <div class="responsive-two-column-grid">
+        <div><h3>FH Joanneum: Master's degree, Content Strategy<br></h3>
+          <p>📍Graz 🇦🇹 
+            <br>(2023–Present)</p></div>
+        <div><h3>Nanyang Technological University: Bachelor of Communication Studies, Journalism</h3>
+          <p>📍Singapore 🇸🇬 
+            <br>(2023–Present)</p></div>
+        </div>
+        </section>
+      <section aria-labelledby="contact-heading"; style="background-color: blanchedalmond"; padding: 0;>
+      <h2 id="education-heading">Get in touch</h2>
+      <p>
+      Connect with me via:
+      <br>
+      <a href="mailto:tayqiaowei@gmail.com"; target="_blank"><button class="button">📩 Email</button></a>
+      <a href="https://www.linkedin.com/in/qiaoweitay"; target="_blank"><button class="button">💼 LinkedIn</button></a>
+      </p>
+    </section>
     </main>
+    <footer>
+      <small>
+        Copyright © 2023 Qiao Wei Tay 
+        <em><q lang="de"; style="color: white">Lieblingsdeutsches Wort: genau</q></em></body>
+      
+      </small>
+    </footer>
     <script>
       /* Scripting */
     </script>
