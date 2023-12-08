@@ -1,0 +1,81 @@
+/*header formatting starts here*/
+header{background-color:#145951;color:white; font-size:40px;font-family:League Spartan, sans-serif;
+padding:30px; width:100vw;}
+
+/*universal formatting*/
+*{
+    box-sizing: border-box;overflow-x:hidden}
+
+/*general formatting for body*/
+body{font-family:helvetica;padding:0px;
+margin:0px;font-size:20px;}
+
+/*link formatting*/
+a:link{ color:#c5e1de;}
+a:visited{color:#c5e1de}
+a:hover{text-decoration:none;}
+
+/*main formatting starts here*/
+main{padding:0px; margin:0px;width:100%}
+
+/*list formatting*/
+ul{list-style-type:none;margin:0px;padding:30px 0px 30px 30px}
+
+/*headings*/
+h1{text-align:center; font-size:60px}
+h2{font-size:40px; font-family:league spartan, sans-serif;}
+
+
+/*text and picture combo - Bio*/
+.fullscreen-image{width:100%;height:100vh;overflow:hidden;}
+.fullscreen-image img{width:100%; height:100%;object-fit:cover;}
+.image-text{position:absolute; top:100%; transform:translate(10%,10%);
+            text-align:left; color:black; font-size:30px;}
+
+
+
+/*contact button in bio*/
+.custom-button{background-color:black;color:white;padding:10px 20px; text-align:center; text-decoration:none; display:inline-block;
+font-size: 30px; border:none; cursor:pointer; border-radius:5px;font-family:League Spartan, sans-serif;}
+.custom-button:hover{background-color:#145951;color:#c5e1de}
+.image-text a{color:white}
+.image-text a:visited{color:white}
+
+
+/*work experience area*/
+.prexp-background-colour{background-color: #c5e1de; margin:0px; padding:90px 0px 30px 30px;}
+
+
+/*education area with 3 boxes*/
+.education-background-color{background-color:#ffffff;margin:0; padding:60px 0px 60px 30px;}
+
+        /*3 boxes*/
+        .container{display:flex; padding:30px 0px 30px 30px}
+        .box{width:33%; height:500px;margin:80px;background-color:#145951;padding:10px; color:white;
+        box-sizing: border-box;display:flex;align-items:center; justify-content:center; text-align:center;overflow:hidden;white-space:pre-line}
+        .box:hover{transform:scale(1.2);}
+        .hidden-text1-content{display:none;font-size:16px;}
+        .hidden-text2-heading{display:none}
+        .box:not(:hover) .hidden-text2-heading{display:block}
+        .box:hover .hidden-text1-content{display:block}
+
+
+/*creative work area*/
+.creative-work-background-color{background-color:#E7E6E6;color:black;padding:60px 0px 60px 30px;margin:0px}
+.creative-work-area{display:flex;margin:0px;justify-content:center;overflow:hidden}
+.creative-work-area img{width:400px;height:auto;margin:10px;transition:transform 0.3s;}
+.creative-work-area img:hover{transform: scale(1.2);}
+
+/*contact details area*/
+.contact-details-background-color{background-color:#c5e1de; padding:60px 0px 60px 30px;margin:0px}
+.contact-details-background-color a{color:black}
+.contact-details-background-color a:visited{color:black}
+.contact-details-background-color a:hover{text-decoration:none;}
+
+.flexbox-container-contact-details{display:flex;;text-align:right;margin:0px; box-sizing:border-box;}
+.image-contact-details{flex:1;}
+.contact-details-text{flex:1;padding:30px;margin:20px;box-sizing:border-box}
+
+
+/*footer format*/
+footer{text-align:right;padding:60px 30px 60px 30px;background-color:#145951;font-family:League Spartan, sans-serif;color:white}
