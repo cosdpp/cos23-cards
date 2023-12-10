@@ -1,0 +1,44 @@
+body {
+  background-color: #D9D9D9;
+
+}
+
+p{
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #0D0D0D;
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 80px;
+  line-height: 20%;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+  font-size: 50px;
+}
+
+h3 {
+  font-family: "Oswald", sans-serif;
+  font-size: 40px;
+}
+
+h4 {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+}
+h2.subtitle {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #0D0D0D;
+}
+sup {
+  vertical-align: super;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
