@@ -6,104 +6,170 @@
     <title>Viki's CV Card</title>
 
     <style>
-      /* Styling */
+      header{
+        background-color: #0d254bc0;
+        padding: 20px;
+        font-family: Helvetica, bold;
+        font-size: 18px;
+        color: white;
+        margin: 30px 0px 30px 0px;
+        text-align: center;
+      }
+
+      .hr1{
+        size: 4px;
+        width: 60%;
+        color: black;
+      }
+
+      h1{
+        text-transform: uppercase;
+      }
+
+      h2{
+        font-size: 18px;
+        text-transform: uppercase;
+      }
+
+      h3{
+        font-size:15px;
+      }
+
+      a:link{
+        color: black;
+        text-decoration-line: none;
+        font-style: bold;
+      }
+
+      a:visited{
+        color: black;
+      }
+
+      a:hover{
+        color: #6684b4c0;
+      }
+
+      .ul1{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .li1{
+        display: inline;
+        padding: 20px 15px;
+        margin: 20px;
+        color: white;
+      }
+
+      body{
+        font-family: Helvetica;
+      }
+
+      main{
+        padding: 0px 30px 60px;
+      }
+
+      section{
+        margin: 70px 0px;
+      }
+
+      p{
+        line-height: 2.5px;
+      }
+
+      .column1{
+        float: left;
+        width: 50%;
+        margin: 40px 0px;
+      }
+
+      .column2{
+        float: right;
+        width: 50%;
+        margin: 140px 0px;
+      }
+
+      footer{
+        padding: 30px 60px;
+        background-color: rgba(13, 37, 75, 0.751);
+        color: #ffffff;
+      }
     </style>
 
   </head>
   </head>
   <body>
-    <header>
-      <h1>Viktoria Stallinger</h1>
+    <header id="Home">
+      <h1>This is me</h1>
+      <hr class="hr1"/>
+        <h2>Viktoria Stallinger</h2>
+          <ul class="ul1">
+            <li class="li1"><a href="#Home">Home</a></li>
+            <li class="li1"><a href="#Bio">Bio</a></li>
+            <li class="li1"><a href="#My Hobbies">My Hobbies</a></li>
+            <li class="li1"><a href="#Work Experience">Work Experience</a></li>
+            <li class="li1"><a href="#Project Work">Project Works</a></li>
+            <li class="li1"><a href="#Contact me">Contact me</a></li>
+          </ul>
     </header>
 
     <main>
 
-        <section>
-                <img src="picture.jpg" alt="Viktoria Stallinger stands there" width="200">
+        <section class="column1">
+                <img src="picture.jpg" alt="Viktoria Stallinger stands there" width="300">
         </section>
    
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <h3>This is me:</h3>
-
+      <section class="column2">
+        <h2 id="Bio">Bio</h2>
         <ul>
-            <li>
-                Born 14th February 1999
-            </li>
-            <li>
-                From Upper Austria, currently live in Graz
-            </li>
-            <li>
-                3 siblings, 2 brothers and 1 sister
-            </li>
-            <li>
-                Currently starting a new job position at <a href="https://www.silicon-alps.at/" target="_blank">Silicon Alps Cluster</a>
-            </li>
-        </ul>
-        
-      </section>
-
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">My Hobbies</h2>
-        
-        <ul>
-            <li>
-                <a href="https://instagram.com/@vktrstllngr" target="_blank">Gym rat</a>
-            </li>
-            <li>
-                Piano playing
-            </li>
-            <li>
-                Cooking, baking and tinkering
-            </li>
-        </ul>
-
-      </section>
-
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        
-        <ul>
-            <li>
-                <strong>2018-2019</strong><br>
-                <p>Traineeship at Land OÖ in Linz</p>
-            </li>
-            <li>
-                <strong>2019-2022</strong><br>
-                <p>Bachelor's programm <em>"Journalism & PR"</em> at FHJ</p>
-            </li>
-            <li>
-                <strong>2022-2023</strong><br>
-                <p>Marketing Assistant at CompanyCode</p>
-            </li>
-            <li>
-                <strong>from 2023</strong><br>
-                <p>Master's programm <em>"Content Strategy"</em> at FHJ</p>
-            </li>
+            <li>Born 14th February 1999</li>
+            <li>From Upper Austria, currently live in Graz</li>
+            <li>3 siblings, 2 brothers and 1 sister</li>
+            <li>Currently starting a new job position at <a href="https://www.silicon-alps.at/" target="_blank">Silicon Alps Cluster</a></li>
         </ul>
       </section>
 
       <section>
-        <h2>Project works</h2>
-            <p>Here you can find some things I worked on</p><br>
+        <h2 id="My Hobbies">My Hobbies</h2>
+        <ul>
+            <li><a href="https://instagram.com/@vktrstllngr" target="_blank">Gym rat</a></li>
+            <li>Piano playing</li>
+            <li>Cooking, baking and tinkering</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="Work Experience">Work Experience</h2>
+        <ul>
+            <li><strong>2018-2019</strong><br>
+                <p>Traineeship at Land OÖ in Linz</p></li>
+            <li><strong>2019-2022</strong><br>
+                <p>Bachelor's programm <em>"Journalism & PR"</em> at FHJ</p></li>
+            <li><strong>2022-2023</strong><br>
+                <p>Marketing Assistant at CompanyCode</p></li>
+            <li><strong>from 2023</strong><br>
+                <p>Master's programm <em>"Content Strategy"</em> at FHJ</p></li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="Project Work">Project works</h2>
+            <p>These are my project works I already did during my bachelor's degree programm "Journalism & PR" and in my first year in the job position as a Marketing Assistant.</p><br>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZBmn5AzbPE?si=IvJT5y9SfmJFmLC0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Lj1711OMKAw?si=ZD9Tgf5NtqiVnzsW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
             </iframe>
       </section>
       
-      <section>
-        <h2>Contact me</h2>
-        <p>
-            <span>&#9743;</span><a href="tel:068110218300">+43 681 102 183 00</a>
-        </p>
-        <p>
-            <span>&#9993;</span><a href="mailto:viktoria.stallinger@edu.fh-joanneum.at">viktoria.stallinger@edu.fh-joanneum.at</a>
-        </p>
-        <adress>8020 Graz</adress>
-      </section>
     </main>
 
-    <script>
-      /* Scripting */
-    </script>
+    <footer>
+      <h2 id="Contact me">Contact me</h2>
+      <p><span>&#9743;</span> <a href="tel:068110218300">+43 681 102 183 00</a></p>
+      <p><span>&#9993;</span> <a href="mailto:viktoria.stallinger@edu.fh-joanneum.at">viktoria.stallinger@edu.fh-joanneum.at</a></p>
+      <adress>8020 Graz</adress>
+    </footer>
+
   </body>
 </html>
