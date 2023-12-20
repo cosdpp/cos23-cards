@@ -7,38 +7,57 @@
   <meta name="author" content="Aneta Pawlik">
   <title>Aneta Pawlik - My portfolio</title>
   <link href="images/favicon.ico" rel="icon" type="image/x-icon">
+  <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Silkscreen&display=swap" rel="stylesheet">  
+  <script src="scripts/main.js"></script>
 </head>
 <body>
-    <!--Primary Navigation -->
-  <nav>
-    <p><a href="#bio">Bio</a></p>
-    <p><a href="#quickfacts">Quick Facts</a></p>
-    <p><a href="#skills">Skills</a></p>
-    <p><a href="#workexperience">Work Experience</a></p>
-    <p><a href="#freelance">Freelance Work</a></p>
-    <p><a href="#worksamples">Work Samples</a></p>
-    <p><a href="#education">Education</a></p>
-    <p><a href="#hobbies">Hobbies</a></p>
-    <p><a href="#letsconnect">Let's Connect</a></p>
-     <br>
-  </nav>
-  <!-- Header Menu of the Page -->
+  <!-- Back to top button -->
+
+
+  <!--Primary Navigation -->
+  <nav id="sticky">
+    <div id="nav-logo">
+      <p id="logo">Aneta Pawlik</p>
+    </div>
+      <ul id="nav-links">
+        <li><a href="#section1" class="top-menu">Bio</a></li>
+        <li><a href="#quickfacts" class="top-menu">Quick Facts</a></li>
+        <li><a href="#skills" class="top-menu">Skills</a></li>
+        <li><a href="#workexperience" class="top-menu">Work</a></li>
+        <li><a href="#worksamples" class="top-menu">Work Samples</a></li>
+        <li><a href="#education" class="top-menu">Education</a></li>
+        <li><a href="#hobbies" class="top-menu">Hobbies</a></li>
+        <li><a href="#letsconnect" class="top-menu">Let's Connect</a></li>
+      </ul>
+    </nav>
+
+  <!-- Hero header -->
   <header>
-    <h1>Hi! My name is Aneta.<sup>(she/her)</sup></h1>
-    <h2 class="subtitle">Welcome to my website, where I will share a little bit about my experience and projects in marketing.</h2>
-  </header>
+      <div id="header-container1">
+        <h1>Hi! My name is Aneta<sup>(she/her)</sup></h1>
+        <h2 class="subtitle">Welcome to my HTML/CSS project website, where I tried to wrangle my beginner coding skills to share a little bit about my experience and projects in marketing.</h2>
+      </div>
+    </header>
   <!-- Main content between Header and Footer -->
   <main>
-    <section>
-      <h2 id="bio">Bio</h2>
+    <div class="section-template1">
+      <h2 class="vertical-header">Bio</h2>
+
+    </div>
+      <div class="bio">
+
+
+    
+    
+      
       <p>I am a marketing professional with over 13 years of experience in marketing strategy and content marketing. In the last couple of years, I have been mainly focusing on content creation for digital channels, SEO, and data analytics.</p>
-      <p>I am currently studying for a master's degree in <a href="https://www.fh-joanneum.at/content-strategie-und-digitale-kommunikation/master/en/programme/" target="_blank">Content Strategy</a> at FH Joanneum. Once completed (2025), I look to transition to a marketing operations-focused role.</p>
+      <p>I am currently studying for a master's degree in <a href="https://www.fh-joanneum.at/content-strategie-und-digitale-kommunikation/master/en/programme/" target="_blank" class="external-link">Content Strategy</a> at FH Joanneum. Once completed (2025), I look to transition to a marketing operations-focused role.</p>
       <p><strong>Fun fact!</strong>The first money I earned off content creation? I was in secondary school. I came up with the idea of drawing Pokémon made to order and colouring them in with pencils. Unfortunately, my so-called “friend” set up a competing business and coloured her Pokémon drawings with permanent markers. The quality was much better, and she also scaled her production (younger brother). I had to shut down the store after only three commissions.</p>
     </section>
     <br>
@@ -49,7 +68,7 @@
       <p >I have 13 years of experience in marketing.</p>
       <p>I am a coffee addict.</p>
       <p>I like creating - writing, taking photos, and cooking.</p>
-      <p>I am a millennial, but I don't like avocado toast.(Can't afford it anyway).</p>
+      <p>I am a millennial, but I don't like avocado toast. (Can't afford it anyway).</p>
       <p>I am a committed lifelong learner.</p>
     </section>
     <br>
@@ -59,9 +78,8 @@
      <p>Graphic Design for Digital Channels</p>
      <p>On-Page SEO</p>
      <p>Photography</p>
-     <p>Social Media Marketing</p>
-     <p>Video Editing</p>
-     <p>Websites & Landing Pages</p>
+     <p>Project Management</p>
+     <p>WordPress Websites & Landing Pages</p>
     </section>
     <br>
     <section>
@@ -98,7 +116,7 @@
     <br>
     <section>
      <h2 id="freelance">Freelance Work</h2> 
-     <p>Some of the companies I worked with</p>
+     <p>Some of the companies and initiatives I collaborated with</p>
      <img src="images/Impact Hub Vienna.jpg" alt="Impact Hub Vienna logo" width="60">
      <img src="images/Aschaa-Photography.jpg" alt="Aschaa Photography logo" width="60">
      <img src="images/Arctic Fine Arts.jpg" alt="Arctic Fine Arts logo" width="60">
@@ -137,15 +155,25 @@
     <br>
     <section>
       <h2 id="letsconnect">Let's Connect</h2>
-      <p>Visit my website to find out more about what I am up to now - <a href="https://www.anetakpawlik.eu/" target="_blank">www.anetakpawlik.eu</a></p>
-      <p>Connect with me on <a href="https://www.linkedin.com/in/anetapawlik/" target="_blank">LinkedIn</a></p>
+      <p>Visit my website to find out more about what I am up to now - <a href="https://www.anetakpawlik.eu/" target="_blank" class="external-link">www.anetakpawlik.eu</a></p>
+      <p>Connect with me on <a href="https://www.linkedin.com/in/anetapawlik/" target="_blank" class="external-link">LinkedIn</a></p>
     </section>
   </main>
   <br>
-  <!-- Footer Menu -->
-  <footer>
-    <p><strong>Made with a lot of &#129324;.</strong></p>
-    <p>© <script>document.write( new Date().getFullYear() );</script> Aneta Pawlik</p>
-  </footer>
+
+  <!-- Footer -->
+    <footer>
+        <p class="footer-text">This website was designed as part of the "Digital Publication Platforms" course assignment at FH Joanneum Graz. You can view a list of all the tools, guides, and resources I used to learn to code <a href="https://www.anetakpawlik.eu/?p=5442" target="blank" class="resources-link" title="Link to Aneta's blog with coding resources">on my website.</a></p>
+      </div>
+      <div id="footer-socialmedia">
+        <a href="https://www.linkedin.com/in/anetapawlik/" target="blank" title="Link to Aneta's LinkedIn profile"><i class="fa-brands fa-linkedin"></i></a>
+        <a href=" https://www.goodreads.com/drinking_tea" target="blank" title="Link to Aneta's Goodreads profile"><i class="fa-brands fa-goodreads-g"></i></a>
+        <a href="https://www.anetakpawlik.eu/" target="blank" title="Link to Aneta's personal website"><i class="fa-brands fa-wordpress-simple"></i></a> 
+      </div>
+  
+        <div id="copyright">
+          <p id="copyright-text"><span>Made with a lot of &#128557; © <script>document.write( new Date().getFullYear() );</script> Aneta Pawlik</span></p>
+        </div>
+    </footer>
 </body>
 </html>
