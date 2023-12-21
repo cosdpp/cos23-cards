@@ -59,7 +59,7 @@ nav {
   background-color: #262626;
   border: solid 2px #F2F2F2;
   justify-content: space-between;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 #sticky {
@@ -82,51 +82,32 @@ p#logo {
 #nav-links-box {
   display: flex;
   flex-direction: row;
-  padding-right: 0;
   font-size: 1.3em;
+  margin: 0;
+  list-style: none;
 }
 
-.nav-item-container1, .nav-item-container2, .nav-item-container3 {
+#nav-links-box li {
+  border-left: solid 2px  #F2F2F2;
+}
+
+#nav-links-box a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.nav-item-container1 {
-border-left: solid 2px  #F2F2F2;
-border-right: solid 2px #F2F2F2;
-}
-
-.nav-item-container2 {
-  border-right: solid 2px #F2F2F2;
-}
-
-.nav-item-container3 {
-  border: 0px;
-}
-
-a.nav-links-style {
+  height: 100%;
   font-size: 1rem;
   color: #F2F2F2;
   text-decoration: none;
   padding: 0px 40px;
-  margin: 10px;
+  overflow: hidden;
 }
 
-a.nav-links-style:hover {
-padding: 0px 40px;
-color:  #F2F2F2;
+#nav-links-box a:hover {
+  color: black;
+  background: white;
 }
 
-.nav-item-container1:hover {
-  background: #0D0D0D
-}
-.nav-item-container2:hover {
-  background: #0D0D0D
-}
-.nav-item-container3:hover {
-  background: #0D0D0D
-}
 /* Header styles */
 
 header {
