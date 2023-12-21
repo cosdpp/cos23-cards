@@ -3,7 +3,7 @@ html {
   font-family: 'ABeeZee', sans-serif;
   color: #F2F2F2;
   background-color: #262626;
-  padding: 0px;
+  padding: 15px;
   margin: 0px;
 }
 
@@ -49,19 +49,17 @@ sup {
   font-style: italic;
   font-size: 0.9rem;
   color: #A6A6A6;
-  
 }
-
 
 /* Primary navigation */
 
 nav {
   display: flex;
-  margin: 0px;
+  height: 80px;
   background-color: #262626;
+  border: solid 2px #F2F2F2;
   justify-content: space-between;
-  align-items: center;
-  border-bottom: solid 2px #F2F2F2;
+  flex-wrap: wrap;
 }
 
 #sticky {
@@ -70,54 +68,86 @@ nav {
 	top: 0;
 }
 #nav-logo {
-  justify-content: center;
-  padding-left: 60px;
+  padding: 0px 60px;
+  border-right: solid 2px #F2F2F2;
 }
 
 p#logo {
   font-family: 'Silkscreen', sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
   color:#F2F2F2;
   text-align: center;
 }
 
-#nav-links {
+#nav-links-box {
   display: flex;
-  gap: 50px;
-  padding-right: 160px;
-  flex-wrap: wrap;
+  flex-direction: row;
+  padding-right: 0;
+  font-size: 1.3em;
 }
-a.top-menu {
+
+.nav-item-container1, .nav-item-container2, .nav-item-container3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav-item-container1 {
+border-left: solid 2px  #F2F2F2;
+border-right: solid 2px #F2F2F2;
+}
+
+.nav-item-container2 {
+  border-right: solid 2px #F2F2F2;
+}
+
+.nav-item-container3 {
+  border: 0px;
+}
+
+a.nav-links-style {
   font-size: 1rem;
   color: #F2F2F2;
   text-decoration: none;
-  border: 2px solid #262626; 
-  padding: 4px;
+  padding: 0px 40px;
+  margin: 10px;
 }
 
-a.top-menu:hover {
-  border: 2px solid #F2F2F2; 
-  padding: 4px;
+a.nav-links-style:hover {
+padding: 0px 40px;
+color:  #F2F2F2;
 }
 
-
+.nav-item-container1:hover {
+  background: #0D0D0D
+}
+.nav-item-container2:hover {
+  background: #0D0D0D
+}
+.nav-item-container3:hover {
+  background: #0D0D0D
+}
 /* Header styles */
+
 header {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   flex-basis: 100px;
-  width: 100%;
   padding: 200px 0px;
-
+  border-left: solid 2px  #F2F2F2;
+  border-right: solid 2px #F2F2F2;
+  border-bottom: solid 2px #F2F2F2;
 }
 
 #header-container1 {
- width: 40%;
+ width: 45%;
  padding-left: 60px;
+
 }
 
 /* Section templates */
+
 
 /* Link styles */
 
@@ -150,6 +180,7 @@ footer {
   font-family: 'ABeeZee', sans-serif;
   background-color: #262626;
   padding: 20px 0px 20px 60px;
+  border: solid 2px #F2F2F2;
 }
 
 .copyright {
