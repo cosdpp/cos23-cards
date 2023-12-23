@@ -513,7 +513,14 @@ p.footer-text {
   padding: 10px;
   font-size: 1.2rem;
 }
+
+#scrollback {
+  color: #F2F2F2;
+  text-transform: uppercase;
+  padding-right: 20px;
 }
+}
+
 
 @media (max-width: 1300px) { 
 
