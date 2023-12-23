@@ -98,7 +98,7 @@
     </div>
   </section>
   <section id="work">
-        <div id="work-section">
+        <div class="gradient-text-section">
             <h2 id="workexperience1">Work Experience</h2>
             <p id="workexperience2">Work Experience</p>
             <p id="workexperience3">Work Experience</p>
@@ -166,23 +166,35 @@
         </div>
   </section>
     <section>
-      <div id="education-container">
-        <h2>Education</h2>
-          <div id="education-inner-box">
-            <div id="education-column1">
+      
+        <div class="gradient-text-section">
+          <h2 id="education-header">Education</h2>
+          <p id="education1">Education</p>
+          <p id="education2">Education</p>
+          <p id="education3">Education</p>
+          <p id="education4">Education</p>
+          <p id="education5">Education</p>
+          <p id="education6">Education</p>
+          <p id="education7">Education</p>
+        </div>
+        <div id="education-container">
+          <div class="education-entry">
               <p><i>October 2023 - October 2025</i></p>
-              <p class="school">MA Content Strategy at FH Joanneum, Graz</p>
+              <p>MA Content Strategy at FH Joanneum, Graz</p>
             </div>
-            <div id="education-column2">
+            <div class="education-entry-last">
               <p><i>September 2009 - May 2012</i></p>
-              <p class="school">BA Advertising and PR at the University of Northampton, England</p>
+              <p>BA Advertising and PR at the University of Northampton, England</p>
             </div>
           </div>
         </div>
     </section>
     <section>
       <div id="contact-me">
-        <img src="images/Aneta_Pawlik_BW.webp" alt="Aneta Pawlik's photo in black and white">
+        <div class="pixel-container">
+            <img id="original" src="images/Aneta_Pawlik_BW.jpg" alt="Aneta Pawlik's photo in black and white">
+            <img id="pixelated" src="images/Aneta_Pawlik_BW20.jpg" >
+        </div>
         <h2 id="letsconnect">Let's Connect</h2>
         <p>Visit my website to find out more about what I am up to now - <a href="https://www.anetakpawlik.eu/" target="_blank" class="external-link">www.anetakpawlik.eu</a></p>
         <p>You can also reach out on <a href="https://www.linkedin.com/in/anetapawlik/" target="_blank" class="external-link">LinkedIn</a>.</p>
@@ -205,5 +217,12 @@
           </div>
         </div>
     </footer>
+      <!-- Media query min -->
+      <div id="media-query-hidden">
+        <h1> I am sorry but this website is not optimised for viewing on screens smaller than 1300px in width :(</h1>
+        <p>I did not have it in me to build a responsive website (yet).</p> 
+        <img src="https://media.giphy.com/media/ahclbUxhREY6ufL5QQ/giphy.gif">
+        <p id="copyright">Made with a lot of 😭 © 2023 Aneta Pawlik</p>
+      </div>
 </body>
 </html>
