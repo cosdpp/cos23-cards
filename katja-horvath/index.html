@@ -21,12 +21,6 @@
 
         </div>
 
-        <!--nav-->
-
-
-
-
-
         <br><br>
         <ul>
             <b>
@@ -104,11 +98,11 @@
                     <div class="box" id="box1">
                         <div class="content">
                             <h3> FH Joanneum</h2>
-                                <p> MA Content Strategy </p>
+                                <p class="box-text"> MA Content Strategy </p>
                         </div>
                         <div class="hover-content">
                             <h3> Content Strategy</h3>
-                            <p> since 2023, part time </p>
+                            <p class="box-text"> since 2023, part time </p>
                         </div>
                     </div>
 
@@ -116,34 +110,34 @@
                     <div class="box" id="box2">
                         <div class="content">
                             <h3> FH Joanneum</h3>
-                            <p> BA Informationsdesign </p>
+                            <p class="box-text"> BA Informationsdesign </p>
                         </div>
                         <div class="hover-content">
                             <h3> Informationsdesign</h3>
-                            <p> 2020 - 2023 <br>Bachelor of Arts in Arts and Design.</p>
+                            <p class="box-text"> 2020 - 2023 <br>Bachelor of Arts in Arts and Design.</p>
                         </div>
                     </div>
 
                     <div class="box" id="box3">
                         <div class="content">
                             <h3> HBLA Oberwart </h3>
-                            <p> Produktmanagement & Präsentation </p>
+                            <p class="box-text"> Produktmanagement & Präsentation </p>
                         </div>
                         <div class="hover-content">
                             <h3> Produktmanagement</h3>
-                            <p> 2015 - 2020 <br> Matura and basic skills in graphic Design.</p>
+                            <p class="box-text"> 2015 - 2020 <br> Matura and basic skills in graphic Design.</p>
                         </div>
                     </div>
 
                     <div class="box" id="box4">
                         <div class="content">
                             <h3> VS & HS </h3>
-                            <p> Krumbach </p>
+                            <p class="box-text"> Krumbach </p>
                         </div>
 
                         <div class="hover-content">
                             <h3> VS & HS Krumbach</h3>
-                            <p> 2007 - 2015 <br> This is where my class clown career began. </p>
+                            <p class="box-text"> 2007 - 2015 <br> This is where my class clown career began. </p>
                         </div>
                     </div>
                 </div>
@@ -312,12 +306,10 @@
             var scrollPosition = window.scrollY;
             var windowHeight = window.innerHeight;
             var bodyHeight = document.body.offsetHeight;
-
-            // Überprüfe, ob der Benutzer fast am Ende der Seite ist
             if (scrollPosition + windowHeight >= bodyHeight - 50) {
-                mainFooter.style.bottom = "0"; // Zeige den Footer
+                mainFooter.style.bottom = "0";
             } else {
-                mainFooter.style.bottom = "-100px"; // Verstecke den Footer
+                mainFooter.style.bottom = "-100px";
             }
         });
     });

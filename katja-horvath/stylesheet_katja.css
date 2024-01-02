@@ -21,7 +21,6 @@ main {
 
 .color-container {
     background-color: #B38A58;
-    /* #D4C2AD #D7A184 #EFDFCC #BA8E7A #66796B*/
     padding: 15px;
     display: flex;
     align-items: center;
@@ -80,7 +79,6 @@ main {
 
 .box {
     width: 23%;
-   
     background-color: #B38A58;
     padding: 10px;
     border-radius: 70px;
@@ -91,7 +89,13 @@ main {
     position: relative; 
     align-items: center;
     height: 140px;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
 }
+
+.box-text{margin-right: 30px; }
 
 .box .hover-content {display: none; color: #0D1F22; position: absolute;
 }
