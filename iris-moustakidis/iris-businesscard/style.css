@@ -1,0 +1,39 @@
+body {
+  font-family: "Helvetica";
+  font-family: "Courier Prime";
+
+  margin: 0;
+}
+
+header {
+  background-color: #b1ede8;
+  padding: 40px;
+}
+
+main {
+  padding: 20px; /* all sides */
+  padding: 0 20px; /* top/bottom left/right */
+  padding: 10px 20px 30px 40px; /* top right bottom left*/
+
+  max-width: 60%;
+  margin-inline: auto;
+}
+
+h1 {
+  color: rgb(7, 7, 7);
+  font-family: 'Helvetica', sans-serif;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Helvetica", sans-serif;
+}
+
+p {
+  font-family: "Courier Prime", monospace;
+  line-height: 1.8;
+}
+
+ul {
+  line-height: 2.;
+}
