@@ -1,0 +1,31 @@
+h1 {
+    color: darkolivegreen;
+    font-family: Arial;
+    
+}
+
+h1 { 
+    border-bottom:  5px solid darkgrey;
+   
+
+}
+body {
+    color:black;
+    font-family: Arial; 
+    border-left: 100px solid #F5F5F5;
+    border-right: 100px solid #F5F5F5;
+    background-color: #F5F5F5;
+}
+h2 {
+    color: darkolivegreen;
+}
+
+.impressum {
+    color: darkgrey;
+    font-style: italic;
+    border-top: solid darkgrey;
+}
+
+.Bio {
+    border-bottom:  2px solid darkgrey;
+}
