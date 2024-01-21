@@ -1,33 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
-    <style>
-      /* Styling */
-    </style>
-  </head>
-  </head>
+     <title>🔮Tiny’s Businesscard</title>
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap');
+        </style>
+     <link rel="stylesheet" href="style.css"> <!-- Verlinkung zum CSS-Stylesheet -->
+    </head>
+
   <body>
+
     <header>
-      <h1>@@MyName</h1>
+        <nav class="menu_parent">
+            <div>
+                <img class="logo" src="deaex-logo_negativ.png" alt="deaex logo">
+            </div>
+            <div class="mainmenu">
+            <ul>
+                <li><a href="#projects-heading">Current Project</a></li>
+                <li><a href="#education-heading">Education</a></li>
+                <li><a href="#programm-heading">Programm Skills</a></li>
+                <li><a href="#contact-heading">Contact</a></li>
+                <li>
+                    <a href="https://www.linkedin.com/pulse/wie-chatgpt-mir-bei-html-und-css-geholfen-hat-dea-ex-d5ymf%3FtrackingId=XiUXFYhSTXiwvaMi%252FqaRuA%253D%253D/?trackingId=XiUXFYhSTXiwvaMi%2FqaRuA%3D%3D" target="_blank">
+                        <button type="button" class="header-button">LinkedIn Article</button>
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+      
     </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
+
+
+
+    <main>  
+
+     <img src="1223x534_tiny_headerbild.jpg" alt="Tiny Bernhard Designer" class="headerimage">
+
+      <p class="large-text">
+            My name is Tiny Bernhard, and I am a freelance graphic designer and illustrator based in Vienna.
+        </p>
+    
+     <p class="intro-text">
+            I am currently transitioning to providing workshops on generative AI tools for marketing departments, focusing on enhancing the creative process. 
+            Since 2016, I have been teaching at the 
+            <a href="https://www.fhstp.ac.at/" target="_blank">FH St. Pölten</a> 
+            and have also delivered lectures at 
+            <a href="https://www.fh-wien.ac.at" target="_blank">FH Wien</a> and the 
+            <a href="https://www.werbeakademie.at" target="_blank">Werbe Akademie</a>.
+        </p>
+
+    <div class="headline-container">
+    <section aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Current Projects</h2>
+            <p>In my current projects, I am passionately combining various skills and expertise to enhance my professional growth, <strong>constantly seeking new challenges</strong> that allow for the integration and development of my diverse abilities.</p>
+      </div>
+
+
+        <div class="project-container">
+            <div class="box">
+                <img src="500x500_romuluscandea.jpg" alt="romulus candea logo">
+                <h3>Childrenbook: Dog & Chicken</h3>
+                <p>In 'Hund und Huhn,' my fusion of imaginative storytelling and vibrant illustrations was recognized with the Romulus Candea Award in 2023, highlighting the project's emotional illustration style.</p>
+            </div>
+            <div class="box">
+                <img src="500x500_bund_logo.jpg" alt="bund logo">
+                <h3>Children book: Consume</h3>
+                <p>The project 'Glück, da hängt ein Preisschild dran' was supported by a grant from the Austrian Federal Ministry of Arts and Culture, allowing me to delve deeply into the interplay of happiness and materialism through artistic expression.</p>
+            </div>
+            <div class="box">
+                <img src="500x500_fhstp_logo.jpg" alt="fhstp logo">
+                <h3>Scholarship of teaching and learning</h3>
+                <p>My scholarly work in the Scholarship of Teaching and Learning at FH St. Pölten focuses on understanding how students employ generative AI tools in educational settings, an exploration integral to my teaching role at the university.</p>
+            </div>
+        </div>
+
+    </section>
+       
+   <div class="headline-container">
+    <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <p>Guided by the belief that <strong>knowledge is the key to a better future</strong>, my educational journey has been a unique blend of business acumen and a deep appreciation for design and aesthetics. This fusion of disciplines reflects my commitment to bringing together economic strategies and creative design to create impactful solutions.</p>
+    </div>
+
+        <div class="horizontal-list">
+            <span class="list-item one">since 2023</span>
+            <span class="list-item two">FH Joanneum</span>
+            <span class="list-item three">Content Strategy</span>
+            <span class="list-item four">Master</span>
+            <button class="button listbutton">
+                <a href="https://www.fh-joanneum.at/content-strategie-und-digitale-kommunikation/master/">Link</a>
+            </button>
+        </div>
+        <hr> <!-- Horizontale Linie -->
+
+        <div class="horizontal-list">
+            <span class="list-item one">2014-2016</span>
+            <span class="list-item two">Werbe Akademie</span>
+            <span class="list-item three">Graphic Design</span>
+            <span class="list-item four">Diplom</span>
+            <button class="button listbutton">
+                <a href="https://www.werbeakademie.at">Link</a>
+            </button>
+        </div>
+        <hr> <!-- Horizontale Linie -->
+
+        <div class="horizontal-list">
+            <span class="list-item one">2010-2013</span>
+            <span class="list-item two">FH St. Pölten</span>
+            <span class="list-item three">Media and Communication Consulting</span>
+            <span class="list-item four">Bachelor</span>
+            <button class="button listbutton">
+                <a href="https://www.fhstp.ac.at/de">Link</a>
+            </button>
+        </div>
+        <hr> <!-- Horizontale Linie -->
+
+        <div class="horizontal-list">
+            <span class="list-item one">2013-2014</span>
+            <span class="list-item two">New Design University</span>
+            <span class="list-item three">Foundation Course</span>
+            <span class="list-item four">successfully completed</span>
+            <button class="button listbutton">
+                <a href="https://www.ndu.ac.at/studium/foundation-course">Link</a>
+            </button>
+        </div>
+        <hr> <!-- Horizontale Linie -->
+
+        <div class="horizontal-list">
+            <span class="list-item one">2005-2010</span>
+            <span class="list-item two">Vienna Business School</span>
+            <span class="list-item three">Management and Accounting</span>
+            <span class="list-item four"> High School Diploma</span>
+            <button class="button listbutton">
+                <a href="https://akademiestrasse.vbs.ac.at">Link</a>
+            </button>
+        </div>
+        <hr> <!-- Horizontale Linie -->
+
+       
+    </section>
+
+    <div class="headline-container">
+    <section aria-labelledby="programm-heading">
+        <h2 id="programm-heading">Programm Skills</h2>
+        <p>Over the course of my education and career, I have mastered a wide range of software program, as continuous learning is integral to my field, and I particulary enjoy <strong>the most efficient workflows</strong> between these diverse tools.</p>
+    </div>
+    
+        <div class="row">
+            <div class="column">
+                <h3>Creative Suite</h3>
+                <div class="flex-container photoshop"><span>Photoshop</span></div>
+                <div class="flex-container illustrator"><span>Illustrator</span></div>
+                <div class="flex-container indesign"><span>InDesign</span></div>
+            </div>
+            <!-- Wiederholen Sie die .column Struktur für die anderen zwei Spalten -->
+            <div class="column">
+                <h3>Generative AI Tools</h3>
+                <div class="flex-container chatgpt"><span>ChatGPT</span></div>
+                <div class="flex-container midjourney"><span>Midjourney</span></div>
+                <div class="flex-container runway"><span>Runway</span></div>
+                <!-- Balken für Spalte 2 -->
+            </div>
+            <div class="column">
+                <h3>Microsoft Office</h3>
+                <div class="flex-container excel"><span>Excel</span></div>
+                <div class="flex-container word"><span>Word</span></div>
+                <div class="flex-container powerpoint"><span>Powerpoint</span></div>
+                <!-- Balken für Spalte 3 -->
+            </div>
+        </div>
+
+
+    </section>
+
+     <section aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Contact</h2>
+    
+        <div class="two-box-row">
+            <div class="left-box">
+                <img src="deaex-logo_negativ.png" alt="dea ex logo negativ" style="max-width: 200px;">                
+                <p>Maria-Rekker-Gasse 1/L3</p>
+                <p>1100 Wien</p>
+            </div>
+            
+            <div class="right-box">
+                <p class="email-link"><a href="mailto:contact@deaex.at">contact@deaex.at</a></p>
+                <p>Find me on:</p>
+                <button class="button"><a href="https://www.linkedin.com/in/tiny-pribitzer/">LINKEDIN</a></button>
+                <button class="button"><a href="https://www.instagram.com/deaex.at/">INSTAGRAM</a></button>
+                <button class="button"><a href="https://www.tiktok.com/@deaex.at">TIKTOK</a></button>
+            </div>
+        </div>
+
     </main>
-    <script>
-      /* Scripting */
+
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10644.654794013222!2d16.3833737!3d48.1649262!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476da97c76805b37%3A0x5d3f75da1e4fd086!2sdea%20ex%20e.U.!5e0!3m2!1sde!2sat!4v1705178263155!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>   
+     </div>
+
+     <script>
+    /* Scripting */
     </script>
+
+
+
+<footer>
+    <p>&#169; dea ex e.U. 2024</p>
+</footer>
+
   </body>
+
+
 </html>
