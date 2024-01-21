@@ -1,1 +1,355 @@
 
+/* Header-Menü */
+
+nav ul {
+    list-style-type: none; /* Entfernt die Listenpunkte */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Richtet die Listenelemente horizontal aus */
+    font-weight: bold;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 40px; /* Fügt Abstand zwischen den Menüpunkten hinzu */
+}
+
+nav a {
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+    color: rgb(255, 255, 255); /* Setzt die Textfarbe der Links */
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #361f5b; /* Farbe der Links beim Überfahren mit der Maus */
+}
+
+.menu_parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.header-button {
+    padding: 10px 20px; /* Polsterung innerhalb des Buttons */
+    background-color: #ffffff; /* Hintergrundfarbe */
+    color: #f238b1; /* Textfarbe */
+    border: none; /* Keine Umrandung */
+    border-radius: 15px; /* Leicht abgerundete Ecken */
+    font-weight: bold;
+    cursor: pointer; /* Cursor ändert sich zu einem Zeiger, wenn man über den Button fährt */
+}
+
+.header-button:hover {
+    background-color: #361f5b; /* Dunklere Hintergrundfarbe beim Überfahren mit der Maus */
+    color: #ffffff;
+}
+
+/* Introduction */
+
+body {
+    font-family: 'Outfit', sans-serif; /* Setzt die Schriftart für den gesamten Inhalt */
+    font-weight: 400;
+    color: #ffffff; /* Standardtextfarbe */
+    margin: 0; /* Entfernt den Standard-Browser-Rand */
+    padding: 0; /* Entfernt den Standard-Browser-Polster */
+    line-height: 1.6; /* Zeilenabstand */
+    margin: 20px; /* Fügt einen Außenabstand von 20px rund um den gesamten Inhalt hinzu */
+    /* oder */
+    padding: 20px; /* Fügt einen Innenabstand von 20px rund um den gesamten Inhalt hinzu */
+    background: linear-gradient(to right, #9a41f2, #f238b1); /* Verlauf von zwei Farben */
+}
+
+.large-text {
+    font-size: 100px; /* Setzt eine große Schriftgröße */
+    font-weight: 600; /* Macht den Text fett */
+    line-height: 110%;
+    padding-top: 0%;
+    /* Weitere Stile nach Bedarf */
+}
+
+.intro-text {
+    font-size: 50px; /* Setzt eine große Schriftgröße */
+    font-weight: medium; /* Macht den Text fett */
+    line-height: 120%;
+    /* Weitere Stile nach Bedarf */
+}
+
+.intro-text a{
+    color: #361f5b;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.intro-text a:hover{
+    color: rgb(255, 154, 255);
+}
+
+h2 {
+    margin-top: 15%; /* Abstand oberhalb der h3-Überschrift */
+    font-size: 30px;
+    color: #ffffff;
+    text-align: left;
+}
+
+h3 {
+    font-size: 20px;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* Current Projects */
+
+.headline-container {
+    padding-bottom: 5%; /* Gibt den unteren Innenabstand für jeden Container an */
+    /* Weitere Stile können hier hinzugefügt werden */
+    padding-top: 4%; /* Gibt den unteren Innenabstand für jeden Container an */
+    /* Weitere Stile können hier hinzugefügt werden */
+    max-width: 50%;
+}
+
+.headerimage {
+    display: block; /* Stellt das Bild als Block-Element dar */
+    margin-top: 5%; /* Fügt oberhalb des Headers einen Abstand ein */
+    margin-left: auto; /* Automatischer linker Margin für Zentrierung */
+    margin-right: auto; /* Automatischer rechter Margin für Zentrierung */
+    margin-bottom: 5%;
+    width: 100%; /* Breite des Bildes */
+    height: auto;/* Höhe passt sich automatisch an, um das Seitenverhältnis zu erhalten */
+    border-radius: 15px; /* Abgerundete Ecken */
+    object-fit: cover; /* Stellt sicher, dass das Bild den Bereich vollständig abdeckt */
+}
+
+.project-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.box {
+    flex: 1; /* Flex-Item flexibel machen */
+    border: 2px solid white; /* Weiße Umrandung */
+    border-radius:40px; /* Abgerundete Ecken */
+    padding: 20px; /* Innenabstand um den Inhalt */
+    background-color: rgba(255, 255, 255, 0.2); /* Hintergrundfarbe des Containers */
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);  
+    align-items: center; /* Horizontal zentrieren */
+    justify-content: center; /* Vertikal zentrieren */
+    text-align: center; /* Text zentrieren */
+}
+
+.box img {
+    width: 100px; /* oder eine andere feste Größe */
+    height: 100px; /* gleiche Größe wie Breite für ein perfektes Kreis */
+    border-radius: 50%; /* macht das Bild rund */
+    object-fit: cover; /* sorgt dafür, dass das Bild gut im Kreis aussieht */
+}
+
+.box h3 {
+    text-align: center; /* Zentriert nur die h3-Elemente innerhalb der .box */
+    margin: 10px 0; /* Optional: Kontrolliert den Abstand um die Überschrift */
+    /* Fügen Sie hier weitere Stile für h3 innerhalb der .box hinzu */
+}
+
+/* Programm-Skills */
+
+.column {
+    width: 33%; /* Breite der Spalte */
+    text-align: center; /* Zentriert den Text in der Überschrift */
+    margin: 0 auto; /* Zentriert die Spalte horizontal */
+    margin-right: 5%; /* Fügt rechts von jeder Box einen Abstand hinzu */
+}
+
+.row {
+    display: flex;
+    justify-content: space-around; /* Gleichmäßiger Abstand zwischen den Spalten */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: flex-start; /* Horizontale Zentrierung des Textes im Balken */
+    align-items: center;
+    height: 30px;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    overflow: hidden;
+    background-image: linear-gradient(to right, magenta, purple);
+}
+
+.flex-container span {
+ padding-left: 20px;
+ text-align: left;
+}
+
+.photoshop {
+    width: 70%;
+}
+
+.illustrator {
+    width: 85%;
+}
+
+.indesign {
+    width: 60%;
+}
+
+.powerpoint {
+    width: 75%;
+}
+
+.word {
+    width: 95%;
+}
+
+.excel {
+    width: 50%;
+}
+
+.midjourney {
+    width: 100%;
+}
+
+.chatgpt {
+    width: 100%;
+}
+
+.runway {
+    width: 90%;
+}
+
+.horizontal-list {
+    display: flex; /* Aktiviert Flexbox */
+    width: 100%;
+    align-items: center; /* Zentriert die Elemente vertikal */
+    justify-content: space-between; /* Verteilt die Elemente gleichmäßig */
+    margin-bottom: 10px; /* Fügt Abstand unter der Liste hinzu, bevor die Linie kommt */
+}
+
+/* Education */
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ffffff; /* Setzt die Farbe der Linie auf Weiß */
+    margin-top: 0;
+}
+
+.list-item {
+    margin: 10px; /* Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+.one {
+    width: 10%; /* Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+.two {
+    width: 30%; /* Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+.three {
+    width: 30%; /* Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+.four {
+    width: 20%; /* Fügt etwas Abstand zwischen den Elementen hinzu */
+}
+
+
+.button {
+    padding: 10px 20px; /* Polsterung innerhalb des Buttons */
+    height: 36px;
+    background-color: purple; /* Hintergrundfarbe */
+    border: 0; /* Keine Umrandung */
+    border-radius: 100px; /* Leicht abgerundete Ecken */
+    cursor: pointer; /* Cursor ändert sich zu einem Zeiger, wenn man über den Button fährt */
+    transition: background-color 0.3s; /* Übergang für die Hintergrundfarbe */
+}
+
+.button a {
+    color: white; /* Setzt die Textfarbe der Links innerhalb des Buttons */
+    text-decoration: none; /* Entfernt die Unterstreichung der Links */
+}
+
+/* Hover-Effekt für die Buttons */
+.button:hover {
+    background-color: magenta; /* Hintergrundfarbe ändert sich beim Hover auf Magenta */
+}
+
+
+/* Contact */
+
+.two-box-row {
+    display: flex; /* Verwendet Flexbox-Layout für die Zeile */
+    justify-content: space-between; /* Platziert die Boxen am linken und rechten Rand */
+    align-items: first baseline; /* Zentriert den Inhalt vertikal in der Zeile */
+}
+
+.row .left-box {
+    flex-basis: 48%; /* Setzt die Breite der linken Box */
+    /* Weitere Stile für die linke Box */
+}
+
+.row .right-box {
+    flex-basis: 48%; /* Setzt die Breite der rechten Box */
+    text-align: right;
+    /* Weitere Stile für die rechte Box */
+}
+
+.email-link {
+    color: white; /* Setzt die Textfarbe auf Weiß */
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    font-size: 50px; /* Setzt eine große Schriftgröße */
+    font-weight: medium; /* Macht den Text fett */
+    line-height: 120%; /* Zeilenhöhe auf 120% festlegen */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Google Map */
+
+.google-map {
+    width: 100%; /* Breite des Containers, z.B. die volle Breite der Seite */
+    height: 400px; /* Höhe des Containers, angepasst für einen schmalen Streifen */
+    overflow: hidden; /* Verhindert Scrollbalken, falls das iframe größer als der Container ist */
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+.google-map iframe {
+    width: 100%; /* Breite des iframes, um den Container auszufüllen */
+    height: 400px; /* Höhe des iframes, um einen schmalen Streifen zu erzeugen */
+ 
+}
+
+/* Footer */
+
+footer {
+    color: #ffffff;
+    text-align: left;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    font-size: small;
+    display: flex;
+    justify-content: space-between; /* Verteilt die Elemente gleichmäßig */
+    align-items: center; /* Zentriert die Elemente vertikal */
+    padding: 0px; /* Fügen Sie nach Bedarf Padding hinzu */
+    color: #ffffff;
+    /* Weitere Stile... */
+}
+
+
+
