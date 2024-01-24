@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ece9e8;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.red {
+  color: red;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  padding: 1rem;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-container {
+  list-style-type: none;
+  padding: 1rem;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-text {
+  line-height: 150%;
+}
+
+.list-text {
+  line-height: 150%;
+}
+
+body {
+  padding: 0px 100px;
+}
+
+.image {
+  object-fit: cover;
+}

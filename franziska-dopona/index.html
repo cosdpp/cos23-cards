@@ -1,66 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8" />
     <title>Franziska’s Card</title>
     <style>
       /* Styling */
     </style>
-  </head>
   </head>
   <body>
     <header>
       <h1>Franziska Dopona</h1>
     </header>
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>Hi, I am Franziska and I am 24 years old. I am currently studying Content Strategy at the FH Joanneum. </p>
-        <img src="portrait.jpeg" alt="It is me Franziska" width="600" height="400"
-      </section> 
+      <section aria-labelledby="bio-heading" class="flex-container">
+        <div>
+          <h2 id="bio-heading">Hi it's me. A optimistic creativ mind.</h2>
+          <p class="hero-text">
+            Hello, I'm Franziska, a 24-year-old professional navigating both
+            work and studies. I've found my passion in the field of
+            communication, where I enjoy creating impactful texts and innovative
+            ideas for clients. I strive for excellence in both my work and
+            academics, and it's an exciting journey. I love bringing creativity
+            into communication, turning ideas into messages that resonate. My
+            approach is a mix of professionalism and friendliness, ensuring that
+            I stand out and make a positive impact in the communication field.
+          </p>
+        </div>
+        <div>
+          <img
+            src="portrait.jpeg"
+            alt="It is me Franziska"
+            width="600"
+            height="400"
+          />
+        </div>
+      </section>
+
       <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        <ul>
-            <li>Running🏃🏻‍♀️</li>
-            <li>Travelling✈️</li>
-            <li>Reading📚</li>
-            <li>Backing🧁</li>
+        <h2 id="hobbies-heading">That's what I do for myself</h2>
+        <ul class="card-container">
+          <li class="card">
+            <p>Running🏃🏻‍♀️</p>
+            <img
+              src="Running.jpg"
+              alt="picture running"
+              width="200"
+              height="200"
+              class="image"
+            />
+          </li>
+          <li class="card">
+            <p>Travelling✈️</p>
+            <img
+              src="reisen.jpg"
+              alt="picture travelling"
+              width="200"
+              height="200"
+              class="image"
+            />
+          </li>
+          <li class="card">
+            <p>Reading📚</p>
+            <img
+              src="lesen.jpg"
+              alt="picture reading"
+              width="200"
+              height="200"
+              class="image"
+            />
+          </li>
+          <li class="card">
+            <p>Backing🧁</p>
+            <img
+              src="backen.jpg"
+              alt="picture backing"
+              width="200"
+              height="200"
+              class="image"
+            />
+          </li>
         </ul>
       </section>
+
       <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Experience</h2>
+        <h2 id="workxp-heading">Let's talk about professional experience</h2>
         <h3>Work</h3>
         <ul>
-            <li>
-              <strong>PR and Communication Consultant at Impuls Kommunikation</strong>
-              <p>description</p>
-            </li> 
-            <li>
-              <strong>XY</strong>
-              <p>description</p>
-            </li>
+          <li>
+            <strong
+              >PR and Communication Consultant at Impuls Kommunikation</strong
+            >
+            <p class="list-text">
+              In my role as communication consultant I work with lots of clients
+              from different industries. Me an my colleguas support our clients
+              with classic PR tasks like press releases, press conferences and
+              contacts with journalists. Also other communication related topics
+              are part of my work. I conduct interviews, write blog post, give
+              workshops and supoort where I can. Another big part of my daily
+              business is social media and community management. Over the years
+              a gaind a wide range of experience and knowledge.
+            </p>
+          </li>
+          <li>
+            <strong>Sales assistant at Humanic</strong>
+            <p class="list-text">
+              During my bachelor's degree a spent my saturdays working as a
+              sales assistent in a shoe shop. Not only did I gain knowledge
+              about shoes but also a lot of experience how to work with clients.
+              I was confronted with different situations which were not always
+              easy. It was very helpful to figure out difficult situations as a
+              team. Over the years I learned a lot about how ti interact with
+              customers and how to figure out what the need. This experience
+              helps me during my daily business today.
+            </p>
+          </li>
         </ul>
         <h3>Education</h3>
         <ul>
-            <li>FH Joanneum Master: Content Strategy</li> 
-            <li>FH St. Pölten Bachelor: Media- und Kommunikationsberatung</li>
-            <li>Hbla Lentia für Produktmanagement und Präsentation</li>
+          <li>
+            <strong>since 2023</strong>
+            <p>FH Joanneum Master: Content Strategy</p>
+          </li>
+          <li>
+            <strong>2018 - 2022</strong>
+            <p>FH St. Pölten Bachelor: Media- und Kommunikationsberatung</p>
+          </li>
+          <li>
+            <strong>2013 - 2018</strong>
+            <p>Hbla Lentia für Produktmanagement und Präsentation</p>
+          </li>
         </ul>
+
         <h3>Skills</h3>
-        <ul>
-            <li>Projectmanagement</li> 
-            <li>Organisation</li>
-            <li>xy</li>
+        <ul class="list-text">
+          <li>Projectmanagement</li>
+          <li>Organisation</li>
+          <li>Creativity</li>
+          <li>Content Management Systems</li>
+          <li>Processmanagement</li>
+          <li>Media landscape</li>
+          <li>Writing and Texting</li>
+          <li>Social Media</li>
         </ul>
       </section>
-      <section aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Contact</h2>
-        <p>feel free to contact me</p>
-        <p>📧 <a href="mailto:Franziska.dopona@edu.fh-joanneum.at">franziska.dopona@edu.fh-joanneum.at</a><br></p>
-        <p>📱 <a href="tel:06506043603">0650/6043603</a><br></p>
-        <p>🏡 Harthauserstraße 3, 4642 Sattledt</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.2555848669804!2d14.040930176395838!3d48.086010171237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773ee6f88bff639%3A0x4a525346e4d86b3e!2sHarthauserstra%C3%9Fe%203%2C%204642%20Unterhart!5e0!3m2!1sde!2sat!4v1700920060386!5m2!1sde!2sat" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </section> 
+
+      <section class="flex-container" aria-labelledby="contact-heading">
+        <div>
+          <h2 id="contact-heading">Get in Contact</h2>
+          <p>
+            Let's have a chat over a coffee (or tea in my case) and get to know
+            each other. I am looking forward to meeting you.
+          </p>
+          <p>
+            📧
+            <a href="mailto:Franziska.dopona@edu.fh-joanneum.at"
+              >franziska.dopona@edu.fh-joanneum.at</a
+            ><br />
+          </p>
+          <p>📱 <a href="tel:06506043603">0650/6043603</a><br /></p>
+          <p>🏡 Harthauserstraße 3, 4642 Sattledt</p>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2665.2555848669804!2d14.040930176395838!3d48.086010171237916!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4773ee6f88bff639%3A0x4a525346e4d86b3e!2sHarthauserstra%C3%9Fe%203%2C%204642%20Unterhart!5e0!3m2!1sde!2sat!4v1700920060386!5m2!1sde!2sat"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
     </main>
     <script>
       /* Scripting */
