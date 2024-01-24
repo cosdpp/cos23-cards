@@ -1,0 +1,18 @@
+h1{color: green;
+    font-family: 'Times New Roman', Times, serif;
+    max-width: 80%;/*maximum of 80% of the screen will be covered*/
+    } 
+h2 {color: green; 
+     font-family: 'Times New Roman', Times, serif;
+    }
+h3 {color: green; 
+    font-family: 'Times New Roman', Times, serif;
+    }
+body {background-color: honeydew;
+    opacity: 0.9;
+    margin: 30 px; 
+    padding: 20px
+    }
+image {margin: 30 px; 
+    padding: 20px
+    }
