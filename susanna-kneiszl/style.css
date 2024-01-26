@@ -1,5 +1,37 @@
 
-        body {
+.menu-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.left h1 {
+    color: #fff;
+    margin: 0;
+}
+
+.right nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.right nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.right nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+body {
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
