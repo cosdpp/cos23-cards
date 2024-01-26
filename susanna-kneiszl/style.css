@@ -36,53 +36,6 @@ body {
     font-weight: bold;
 }
 
-section {
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-}
-
-ul {
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-/* Resetting some default styles */
-body, h1, h2, p {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
 main {
     max-width: 800px;
     margin: 20px auto;
@@ -94,7 +47,20 @@ main {
 
 section {
     margin-bottom: 20px;
+    position: relative;
 }
+
+.decorative-square {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    border-radius: 5px;
+}
+
+.square1 { background-color: #fff5e0; top: 10px; left: 10px; }
+.square2 { background-color: #ff6969; top: 10px; right: 10px; }
+.square3 { background-color: #bb2525; bottom: 10px; left: 10px; }
+.square4 { background-color: #141e46; bottom: 10px; right: 10px; }
 
 footer {
     background-color: #333;
