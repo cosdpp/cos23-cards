@@ -67,7 +67,37 @@
     <div class="carousel-item"> <img src="smartmockups_l0a1ffnh.jpg"</div>
   ...
 </div>
-      
+      .container {
+  overflow: hidden;
+}
+
+.items {
+  transition: transform .5s ease;
+  white-space: nowrap;
+  background: black;
+  clear: both;
+  width: 500%;
+  overflow: hidden;
+}
+
+.item {
+  height: 10em;
+  width: 20%;
+  float: left;
+  display: block;
+  white-space: normal;
+}
+.item:nth-child(even) {
+  background: blue;
+}
+.item:nth-child(odd) {
+  background: red;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 1em;
+}
  </div>
   <div class="buttons">
     <button class="btn-back">Back</button>
