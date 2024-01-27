@@ -98,7 +98,41 @@
   text-align: center;
   margin-top: 1em;
 }
- </div>
+ </div>  
+var container = document.querySelector('.container');
+var itemContainer = document.querySelector('.items');
+var items = document.querySelectorAll('.item');
+var index = 0;
+
+itemContainer.style.transform = 'translateX(0)';
+
+var btnBack = container.querySelector('.btn-back');
+var btnNext = container.querySelector('.btn-next');
+
+btnBack.addEventListener('click', function() {
+  animate(-1);
+});
+
+btnNext.addEventListener('click', function() {
+  animate(1);
+});
+
+function animate(direction) {
+  index += direction;
+  
+  if(index < 0) {
+    index = items.length - 1;
+  }
+  else if (index >= items.length) {
+    index = 0;
+  }
+  
+  var itemsCount = items.length;
+  var itemsPixles = 100 / itemsCount;
+  var translateX = itemsPixles * index * -1;
+  console.warn(translateX);
+  itemContainer.style.transform = 'translateX(' + translateX + '%)';
+}
   <div class="buttons">
     <button class="btn-back">Back</button>
     <button class="btn-next">Next</button>
