@@ -3,58 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Susanna's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <div class="menu-bar">
-            <div class="left">
-                <h1>Your Name</h1>
-            </div>
-            <div class="right">
-                <nav>
-                    <ul>
-                        <li><a href="#education">Education</a></li>
-                        <li><a href="#hobby">Hobby</a></li>
-                    </ul>
-                </nav>
-            </div>
+<header>
+    <h1 class="header-title">Hey, I'm Susanna,</h1>
+    <h2 class="header-subtitle">a determined storyteller with a passion for content creation!</h2>
+</header>
+
+<div class="vertical-square" aria-hidden="true"></div>
+
+<main>
+    <section class="workxp-heading">
+        <h2 id="workxp-heading">Work Experience</h2>
+        <ul class="no-bullets">
+            <li><span class="year">2019 - 2020</span></li>
+                <li><a class="invisible-link" href="https://www.edelbrand.at/de/">Hödl Hof Distillery</a></li>
+                    <li><span class="list-detail">Office Support</span></li>
+            <li><span class="year">2021 - 2022</span></li>
+                <li><a class="invisible-link" href="https://www.buechersegler.at/pages/buchladen/">Büchersegler Bookstore</a></li>
+                    <li><span class="list-detail">Bookseller</span></li>
+            <li><span class="year">2022 - 2023</span></li>
+                <li><a class="invisible-link" href="https://www.casinos.at/casinos/graz">Casino Graz</a></li>
+                    <li><span class="list-detail">Marketing Assistant</span></li>
+        </ul>
+    </section>
+
+    <section class="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <ul class="no-bullets">
+            <li><span class="year">2020 - 2020</span></li>
+                <li><a class="invisible-link" href="https://www.campus02.at/innovationsmanagement/bachelor/">FH Campus02</a></li>
+                    <li><span class="list-detail">Innovationmanagement</span></li>
+            <li><span class="year">2014 - 2019</span></li>
+                <li><a class="invisible-link" href="http://www.hbla-oberwart.at">HBLA Oberwart</a></li>
+                    <li><span class="list-detail">Productmanagement and Presentation</span></li>
+            <li><span class="year">2010 - 2014</span></li>
+                <li><a class="invisible-link" href="https://www.diegerlitz.at">NMS Gerlitz</a></li>
+                    <li><span class="list-detail">Compulsory Secondary school for music</span></li>
+            <li><span class="year">2006 - 2010</span></li>
+                <li><a class="invisible-link" href="https://www.volksschule-kaindorf.at/volksschule-hofkirchen/">VS Hofkirchen</a></li>
+        </ul>
+    </section>
+
+    <section class="hobbies-heading">
+        <h2 id="hobbies-heading">Hobbies</h2>
+        <div class="hobbies-square" aria-hidden="true"></div>
+        <ul class="no-bullets">
+            <li>📚 Reading</li>
+            <li>🎨 Drawing</li>
+            <li>📓 Journaling</li>
+        </ul>
+    </section>
+
+    <h2 class="contact-heading">Feel free to contact me</h2>
+    <section class="contact">
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
         </div>
-    </header>
+        <div class="contact-info">
+                <img src="Susanna-Kneiszl.jpg" alt="Susanna Kneißl">
+                <p>Susanna Kneißl</p>
+        </div>
+    </section>      
+</main>
 
-    <main>
-        <section aria-labelledby="bio-heading">
-            <h2 id="bio-heading">Bio</h2>
-            <p>Hi, I'm [Your Name]. I am a passionate [Your Profession] based in [Your Location]. </p>
-            <div class="decorative-square square1"></div>
-            <div class="decorative-square square2"></div>
-        </section>
-
-        <section aria-labelledby="hobbies-heading">
-            <h2 id="hobbies-heading">Hobbies</h2>
-            <ul>
-                <li>📚 Reading</li>
-                <li>🎨 Drawing</li>
-            </ul>
-            <div class="decorative-square square3"></div>
-        </section>
-
-        <section aria-labelledby="workxp-heading">
-            <h2 id="workxp-heading">Work Experience</h2>
-            <ul>
-                <li>🥃 2019 - 2020 <a href="https://www.edelbrand.at/de/">Hödl Hof Distillery</a> Customer Service and distribution</li>
-                <li>📚 2021 - 2022 <a href="https://www.buechersegler.at/pages/buchladen/">Büchersegler Bookstore</a> Selling books and customer service</li>
-                <li>🎰 2022 - 2023 <a href="https://www.casinos.at/casinos/graz">Casino Graz</a> Marketing Assistant</li>
-            </ul>
-            <div class="decorative-square square4"></div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-
+<footer>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100005513174017">
+            <img src="facebook-icon.svg" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/sus_anna_patricia/">
+            <img src="instagram-icon.svg" alt="Instagram">
+        </a>
+    </div>
+    <p class="copyright">&copy; 2024 Susanna Kneißl</p>
+</footer>
 </body>
 </html>
