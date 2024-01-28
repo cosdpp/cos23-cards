@@ -2,32 +2,323 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <title>Lisa Marie’s Card</title>
     <style>
-      /* Styling */
-    </style>
-  </head>
-  </head>
-  <body>
-    <header>
-      <h1>@@MyName</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
-      </section>
+      * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.7em;
+    color: #34495e;
+    font-family: Verdana;
+    font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+    font-family: Verdana;
+}
+
+h1 { 
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+h2 { 
+    font-size: 25px;
+    line-height: 1.5em;
+    padding-top: 40px;
+    padding-bottom: 5px;
+}
+
+strong {
+    font-size: 16px;
+}
+
+.module a {
+    text-decoration: none;
+}
+
+.module a:active {
+    text-decoration: none;
+}
+
+.module a:hover {
+    box-shadow: inset 0 -30px 0 #1f8dd6;
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    padding-bottom: 25px;
+}
+
+figure {
+    width: 250px;
+    height: auto;
+
+    padding: 1em 1em 2em 1em;
+    border: 1px solid silver;
+    margin: 0 2em 2em 0; 
+    box-shadow: 10px 0px 25px #555;
+    transform: rotate(1deg);
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding-top: 2em;
+    line-height: 1.2em;
+    text-align: center;
+}
+
+.hobbies {
+    float: right;
+}
+
+.portrait {
+    float: left;
+}
+
+.module-introduction {
+    margin: 200px 50px 150px 50px;
+}
+
+.module-hobbies {
+    margin: 0 50px 130px 50px;
+}
+
+.module {
+    margin: 0px 50px 50px 50px;
+}
+
+.module-contact {
+    margin: 0px 50px 0px 50px;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 16px 50px 20px 50px;
+    display: flex;
+    align-items: center;
+    text-shadow: 0 0 5px rgba(0,0,0,0.1);
+    color: white;
+    font-size: 16px;
+    background-color: #1f8dd6;
+}
+
+.navigationslinks {
+    color: inherit;
+    text-decoration: none;
+    margin: 15px;
+    &:hover,
+    &:focus {
+      text-decoration: overline;
+      text-decoration-color: #white;
+    }
+}
+
+.menu-list {
+    list-style-type: none;
+    margin-left: auto;
+    display: none;
+    @media (min-width: 640px) {
+      display: flex;
+    }
+}
+
+.custom-button {
+    background-color: #1f8dd6;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.custom-button:hover {
+    background-color: white;
+    color: #1f8dd6;
+}
+
+.buttons-inline {
+    display: flex;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    font: 20px;
+    padding: 20px;
+    text-align: right;
+    margin-top: 50px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+    <nav>
+      <div class="navigation-home">Lisa Marie Huber</div>
+      <ul class="menu-list">
+        <li><a class="navigationslinks" href="#bio-heading">about me</a></li>
+        <li><a class="navigationslinks" href="#hobbies-heading">hobbies</a></li>
+        <li><a class="navigationslinks" href="#workxp-heading">work</a></li>
+        <li><a class="navigationslinks" href="#education-heading">education</a></li>
+        <li><a class="navigationslinks" href="#getintouch-heading">contact</a></li>
+      </ul>
+    </nav>
+
+  <main>
+
+    <div class="module-introduction">
+
+        <h1>Hey, I'm Lisa Marie!</h1>
+
+        <figure class="portrait">
+          <img src="lisa-marie-huber.jpg" alt="portrait of lisa marie" width="400">
+          <figcaption>This is me.</figcaption>
+        </figure>
+
+        <section aria-labelledby="bio-heading">
+          <h2 id="bio-heading">quick overview on myself 🔎</h2>
+
+          <p>Target-oriented extra-occupational Content Strategy master student at FH Joanneum with a background in marketing and graphic design.</br>
+          Creative and conscientious worker, who loves to work in international settings.</br>
+          Experience in creating content for online and offline and in using the Adobe Creative Cloud.</br></p>
+          <p>Nationality: 🇦🇹 (I'm Austrian)</br>
+          Birthday: August 7, 1998 (zodiac sign leo 🦁)</p>
+        </section>
+    </div>
+
+
+    <div class="module-hobbies">
+
       <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <h2 id="hobbies-heading">what I do when I don't work or study ✨</h2>  
+
+        <figure class="hobbies">
+          <img src="top-view-hands-tieing-christmas-gift-with-string.jpg" alt="hobby designing and decorating" width="400"/>
+          <figcaption>designing, wrapping gifts, decorating</figcaption>
+        </figure>
+
+        <figure class="hobbies">
+          <img src="business-people-are-brainstorming.jpg" alt="hobby planning-events-and-parties" width="400"/>
+          <figcaption>planning events, parties or the next vacation</figcaption>
+        </figure>
+        
+        <figure class="hobbies">
+          <img src="top-view-hands-holding-smartphone.jpg" alt="hobby travelling" width="400">
+          <figcaption>travelling, discovering cultures</figcaption>
+        </figure>
+
+            <p>My hobbies include travelling and discovering new places or cultures and I love to meet new people.</p>
+            <p>I'm also really into planning e.g. parties or family events.</p>
+            <p>What's more, I like everything that has to do with design e.g. wrapping gifts, designing invitation cards or decorating my home.</p>
+     
       </section>
+    </div>
+
+    <div class="module">
       <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <h2 id="workxp-heading">my work until now 💻</h2>
+        
+        02/2023 - now</br>
+        <strong>Marketing Manager</strong></br>
+          <a href="https://www.xal.com/de" target="_blank"> XAL GmbH | Graz</a></br></strong>
+        <ul>
+          <li>responsible for Green Electrics Licht & Energietechnik GmbH</li>
+          <li>project management</li>
+          <li>campaign coordination</li>
+          <li>print projects</li>
+          <li>content and website management</li>
+        </ul>
+
+        10/2021 - 08/2022</br>
+        <strong>Marketing Assistant</strong></br>
+          <a href="https://www.gigasport.at/" target="_blank">Gigasport GmbH | Graz</a></br>
+        <ul>
+          <li>campaign coordination</li>
+          <li>coordination of print projects</li> 
+          <li>support of sales team</li>
+        </ul>
+
+        10/2018 - 08/2021</br>
+        <strong>Marketing & Sales Support</strong></br>
+        <a href="https://www.zeta.com/de/" target="_blank">ZETA GmbH | Lieboch</a>
+        <ul>
+          <li>planning, coordination & implementation of corporate design guidelines</li>
+          <li>creaton of online and offline advertising materials</li>
+          <li>content and website management</li>
+          <li>support of sales team and managing board</li>
+        </ul>
       </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
+    </div>
+
+    <div class="module">
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">what I learned 👩🏻‍🎓</h2>
+        
+        <p>2023 - now</br>
+        <strong>Master Content Strategy</strong></br>
+          <a href="https://www.fh-joanneum.at/content-strategie-und-digitale-kommunikation/master/en/programme/" target="_blank">FH Joanneum</a>
+        </p>
+
+        <p>2020 - 2023</br>
+        <strong>Bachelor Marketing & Sales</strong></br>
+          <a href="https://www.campus02.at/marketing/bachelor/" target="_blank">FH Campus 02</a>
+        </p>
+
+        <p>2017 - 2019</br>
+        <strong>Fachakademie for Media Informatics and Media Design</strong></br>
+          <a href="https://www.wifi.at/karriere/fachakademien/medieninformatik-und-mediendesign/medieninformatik" target="_blank">WIFI Graz</a>
+        </p>
+      </section>
+    </div>
+
+    <div class="module-contact">
+      <section aria-labelledby="getintouch-heading">
+        <h2 id="getintouch-heading">say hello 👋🏻</h2>
+        <div class="buttons-inline">
+          <p><a class="custom-button" target="_blank" href="https://www.linkedin.com/feed/">LinkedIn</a></p>
+          <p><a class="custom-button" href="mailto:lisa.marie.huber@gmx.at">email me</a></p>
+          <p><a class="custom-button" href="tel:+436801158620">let's talk</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+      Lisa Marie Huber</br>
+      8010 Graz
+  </footer>
   </body>
 </html>
