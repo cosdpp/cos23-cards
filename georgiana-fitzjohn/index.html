@@ -5,46 +5,53 @@
   <title>Georgiana's Card</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: 'Montserrat', sans-serif;
       margin: 0;
       padding: 0;
       box-sizing: border-box;
+      background-color: #f8f8f8;
     }
 
     header {
-      background-color: #f2f2f2;
-      padding: 10px;
+      background-color: #4CAF50;
+      padding: 20px;
       text-align: center;
+      color: #fff;
     }
 
     header h1 {
       margin: 0;
+      font-size: 2em;
     }
 
     header img {
       max-width: 100%;
       height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
 
     main {
       max-width: 800px;
       margin: 20px auto;
-      padding: 10px;
+      padding: 20px;
       background-color: #fff;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      border-radius: 5px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
     }
 
     section {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
 
     h2 {
-      color: #333;
+      color: #4CAF50;
+      margin-bottom: 15px;
     }
 
     p {
-      line-height: 1.5;
+      line-height: 1.6;
+      color: #555;
     }
 
     ul {
@@ -53,7 +60,8 @@
     }
 
     li {
-      margin-bottom: 5px;
+      margin-bottom: 8px;
+      color: #4CAF50;
     }
 
     .carousel {
@@ -61,30 +69,42 @@
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
+      border-radius: 10px;
+      margin-bottom: 30px;
     }
 
     .carousel img {
       width: 100%;
       scroll-snap-align: start;
+      border-radius: 10px;
     }
 
     .buttons {
-      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
     }
 
-    .btn-back, .btn-next {
-      padding: 5px 10px;
-      margin-right: 10px;
+    .btn-back,
+    .btn-next {
+      padding: 10px 20px;
       cursor: pointer;
-      background-color: #3498db;
+      background-color: #4CAF50;
       color: #fff;
       border: none;
-      border-radius: 3px;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
     }
 
-    .btn-back:disabled, .btn-next:disabled {
+    .btn-back:disabled,
+    .btn-next:disabled {
       background-color: #d3d3d3;
       cursor: not-allowed;
+    }
+
+    .btn-back:hover,
+    .btn-next:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
@@ -116,7 +136,7 @@
     </section>
     <section aria-labelledby="workxp-heading">
       <h2 id="workxp-heading">Personal projects</h2>
-      <a href="https://africanismstee.com/">Africanisms Tee</a><br>
+      <a href="https://africanismstee.com/" style="color: #4CAF50; text-decoration: underline;">Africanisms Tee</a><br>
       My e-commerce project celebrating African quirks and colloquialisms through clothes.<br>
       <br>
       <img src="For%20Syndey-%20Africanisms%20Tee.png" width="20%" height="20%" alt="For%20Syndey-%20Africanisms%20Tee"><br>
@@ -146,16 +166,4 @@
 
     function scrollCarousel(direction) {
       currentIndex += direction;
-      const newPosition = currentIndex * carousel.offsetWidth;
-      carousel.scrollTo({
-        left: newPosition,
-        behavior: "smooth"
-      });
-
-      // Update button visibility based on the current index
-      btnBack.disabled = currentIndex === 0;
-      btnNext.disabled = currentIndex === carousel.children.length - 1;
-    }
-  </script>
-</body>
-</html>
+      const
