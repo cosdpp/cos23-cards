@@ -1,0 +1,192 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    text-align: left;
+}
+
+.header-container {
+    display: flex;
+    align-items: left; 
+    margin-left: 175px; 
+    background-color: rgba(192, 177, 203, 1); /* Background color with 50% opacity */
+    padding: 20px; /* Add padding for spacing */
+}
+
+
+.profile-image {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    margin-right: 50px; 
+}
+
+.header-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 175px; /* Adjusted to avoid overlaying with the vertical square */
+    text-align: left;
+}
+
+.header-subtitle {
+    font-size: 1.2em;
+    text-align: left;
+}
+
+nav {
+    background-color: #dfcdf3; /* Light Lila */
+    padding: 20px;
+    text-align: center;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #6d5e8c; /* Lila */
+}
+
+main {
+    padding: 20px;
+}
+
+.content-section {
+    margin-left: 175px; /* Adjusted to avoid overlaying with the vertical square */
+    margin-bottom: 40px;
+}
+
+
+.check:before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    background-color: rgba(254, 220, 149, 0.5); /* Yellow with 50% opacity */
+    padding: 10px 0 10px 120px; /* Adjust padding: top, right, bottom, left */
+    margin-left: -100px; /* Compensate for the padding on the left */
+}
+
+.contact-info {
+    font-size: 1.2em;
+}
+
+.no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: medium;
+}
+
+.no-bullets li {
+    margin-bottom: 10px;
+}
+
+.invisible-link {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+
+.invisible-link::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(136, 209, 204, 0.5);
+    z-index: -1;
+    transition: background-color 0.3s ease;
+}
+
+.invisible-link:hover::before {
+    background-color: rgba(117, 190, 185, 1);
+}
+
+.vertical-square {
+    width: 175px;
+    height: 100%;
+    background-color: rgba(223, 208, 234, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0; /* Move the square all the way to the left */
+    z-index: 1000; /* Lower z-index than the header */
+}
+
+.year {
+    font-size: large;
+    margin: 10;
+    text-align: center;
+}
+
+.list-detail {
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    left: 20px;
+    z-index: 1;
+}
+
+.contact-info {
+    text-align: left;
+    margin-right: 120px; /* Compensate for the padding on the right */
+    float: left; /* Add float to align with social media icons */
+    width: calc(50% - 120px); /* Adjust width to accommodate margin and padding */
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.social-icons {
+    margin: 0;
+    margin-top: 20px;
+    text-align: left;
+    width: 50%; /* Adjust width as needed */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 20px;
+    margin-top: 30px;
+    padding-right: 5px; /* Increase the padding-right value to move the icons further to the right */
+}
+
+.social-icons img {
+    width: 100px;
+    height: 100px;
+}
