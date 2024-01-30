@@ -1,77 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Yasmeen’s Card</title>
-    <style>
-      /* Styling */
-    </style>
-  </head>
-  </head>
-    <body style="background-color: thistle;>
-    <header style="text-align: center;">
-    <div style="margin: 0 auto; text-align: center;">
-        <h1 style="font-weight: bold;">Yasmeen</h1>
-        <img src='WhatsApp Image 2023-01-23 at 10.41.34.jpeg' width='250' height='200' />
-    </div>
-</header>
-
-    <main>
-        <section aria-labelledby="bio-heading">
-            <h2 id="bio-heading">Bio</h2>
-            <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 5px; list-style-type: disc;">Coffee lover ☕️</li>
-                <li style="margin-bottom: 5px; list-style-type: disc;">Music 🎵</li>
-            </ul>
-        </section>
-        
-  
-        <section aria-labelledby="hobbies-heading">
-            <h2 id="hobbies-heading">Hobbies</h2>
-            <ul style="padding-left: 20px;">
-                <li style="margin-bottom: 5px; list-style-type: disc;">Reading 📚</li>
-                <li style="margin-bottom: 5px; list-style-type: disc;">TikTok 📲</li>
-                <li style="margin-bottom: 5px; list-style-type: disc;">Travelling ✈️</li>
-            </ul>
-        </section>
-        <!DOCTYPE html>
-<html>
 <head>
-  <title>Study</title>
-  <style>
-    #hiddenContent {
-      display: none;
-      margin-top: 20px;}
-    .icon {font-size: 30px;
-      color: #3498db; /* Change the color to your preference */
-      cursor: pointer;}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmeen's Portfolio</title>
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f6f6f6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4a90e2;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Main Content Styling */
+        main {
+            padding: 40px 20px;
+        }
+
+        h2 {
+            font-size: 24px;
+            color: #4a90e2;
+            margin-top: 40px;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style-type: none;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .blue-text {
+            color: #4a90e2;
+        }
+
+        /* Contact Module Styling */
+        .module-contact {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .buttons-inline {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .custom-button {
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .custom-button:hover {
+            background-color: #357dbf;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #4a90e2;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .emoji {
+            font-size: 20px;
+            margin-right: 5px;
+        }
+
+        .interests {
+            font-style: italic;
+            color: #777;
+            margin-top: 20px;
+        }
+
+        .hobby-title {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .hobby-genre {
+            display: inline-block;
+            background-color: #f6f6f6; /* Same as page background */
+            color: #333; /* Text color */
+            padding: 6px 12px; /* Smaller padding */
+            border-radius: 10px; /* Rounded corners */
+            margin-right: 10px;
+            border: 2px solid #4a90e2; /* Blue border */
+        }
+    </style>
 </head>
 <body>
-  <i class="icon" onclick="showContent()">📘</i>
-  <p id="hiddenContent">Studying content strategy</p>
-  
-  <script>
-    function showContent() {var hiddenContent = document.getElementById("hiddenContent");
-      if (hiddenContent.style.display === "none") {hiddenContent.style.display = "block";
-      } else {
-        hiddenContent.style.display = "none";
-      }
-    }
-  </script>
+
+<header>
+    <h1>Yasmeen's Portfolio</h1>
+</header>
+
+<main>
+    <section>
+        <h2 class="blue-text">Bio</h2>
+        <ul>
+            <li>Coffee lover <span class="emoji">☕️</span></li>
+            <li>Music lover <span class="emoji">🎵</span></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="blue-text">Hobbies</h2>
+        <div>
+            <p class="hobby-title">Watching Movies</p>
+            <span class="hobby-genre">Comedy <span class="emoji">😂</span></span>
+            <span class="hobby-genre">Romance <span class="emoji">❤️</span></span>
+            <span class="hobby-genre">Sci-Fi <span class="emoji">🛸</span></span>
+            <span class="hobby-genre">Superheroes <span class="emoji">🦸</span></span>
+            <span class="hobby-genre">Guardians of the Galaxy <span class="emoji">🌌</span></span>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="blue-text">Work Experience</h2>
+        <ul>
+            <li>Content Processing Operator</li>
+            <li>Data Manager</li>
+            
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="blue-text">Education</h2>
+        <ul>
+            <li>Master Content Strategy</li>
+            <li>Bachelor English and Turkish Literature</li>
+            
+        </ul>
+    </section>
+
+    <div class="module-contact">
+        <section>
+            <h2 class="blue-text">Say Hello <span class="emoji">👋🏻</span></h2>
+            <div class="buttons-inline">
+                <a class="custom-button" target="_blank" href="https://www.linkedin.com/in/yasmeen-alayyan-286bb8139/">LinkedIn</a>
+                <a class="custom-button" href="mailto:yasmeenk_alayyan@hotmail.com">Email Me</a>
+                <a class="custom-button" href="tel:+4368184042009">Let's Talk</a>
+            </div>
+        </section>
+    </div>
+
+    <p class="interests">Feel free to reach out for a chat about movies or anything else! 🍿</p>
+</main>
+
+<footer>
+    <p>Yassmeen Alayyan | 8010 Graz</p>
+</footer>
+
 </body>
-</html>
-
-
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        <p>Content Processing operator</p>
-        <a href="https://www.linkedin.com/in/yasmeen-alayyan-286bb8139/">Visit my LinkedIn Profile</a>
-
-      </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
 </html>
