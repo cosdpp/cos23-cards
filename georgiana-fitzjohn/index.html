@@ -166,4 +166,16 @@
 
     function scrollCarousel(direction) {
       currentIndex += direction;
-      const
+      const newPosition = currentIndex * carousel.offsetWidth;
+      carousel.scrollTo({
+        left: newPosition,
+        behavior: "smooth"
+      });
+
+      // Update button visibility based on the current index
+      btnBack.disabled = currentIndex === 0;
+      btnNext.disabled = currentIndex === carousel.children.length - 1;
+    }
+  </script>
+</body>
+</html>
