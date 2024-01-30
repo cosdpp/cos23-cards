@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <title>Georgiana's Card</title>
   <style>
     .carousel {
@@ -16,78 +16,69 @@
       scroll-snap-align: start;
     }
 
-    .carousel-item {
-      flex: 0 0 auto;
-      width: 100%;
+    .buttons {
+      margin-top: 10px;
+    }
+
+    .btn-back, .btn-next {
+      padding: 5px 10px;
       margin-right: 10px;
-      scroll-snap-align: start;
+      cursor: pointer;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Georgiana</h1>
-    <img src="IMG_20230802_141732.jpg" width="20%" height="30%" alt="IMG_20230802_141732">
+    <h1>Georgiana</h1><img src="IMG_20230802_141732.jpg" width="20%" height="30%" alt="IMG_20230802_141732">
   </header>
   <main>
     <section aria-labelledby="bio-heading">
       <h2 id="bio-heading">Bio</h2>
-      <p>'I'd like to take a minute Just sit right there' and tell you how I came to content strategy.</p>
-      <h3><b>Crafting the perfect story for end users is key in connecting with users.</b></h3>
-      <p>With my expertise in crafting user-centric stories and solving content issues, I create user guides, knowledge base articles, UX writing, and microcopies to place the user at the center of any creation. To enhance my ability to craft exceptional user experiences, I am obtaining a Masters in Content Strategy. In addition to using storytelling techniques, I also have a deep understanding of content strategy, making it possible for me to help businesses connect meaningfully with their target audience.</p>
+      <!-- Bio content here -->
     </section>
     <section aria-labelledby="hobbies-heading">
       <h2 id="hobbies-heading">Hobbies</h2>
-      <ul>
-        <li>Cycling</li>
-        <li>Reading</li>
-        <li>Travelling</li>
-      </ul>
+      <!-- Hobbies content here -->
     </section>
     <section aria-labelledby="workxp-heading">
       <h2 id="workxp-heading">Work Experience</h2>
-      <ul>
-        <li>Content and Licensing Assistant</li>
-        <li>Content Designer</li>
-      </ul>
+      <!-- Work Experience content here -->
     </section>
     <section aria-labelledby="workxp-heading">
       <h2 id="workxp-heading">Personal projects</h2>
-      <a href="https://africanismstee.com/">Africanisms Tee</a>
-      <br>My e-commerce project celebrating African quirks and colloqualisms through clothes.</br>
-      <br>
-      <img src="For Syndey- Africanisms Tee.png" width="20%" height="20%">
-      </br>
+      <!-- Personal projects content here -->
       <div class="carousel">
-        <div class="carousel-item"><img src="smartmockups_l05t6jv4.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a06ima.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a0dq1s.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a0lydz.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a0lydz.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a13sun.jpg" width="10%" height="20%"></div>
-        <div class="carousel-item"><img src="smartmockups_l0a1ffnh.jpg" width="10%" height="20%"></div>
+        <div class="carousel-item"><img src="smartmockups_l05t6jv4.jpg" alt="smartmockups_l05t6jv4"></div>
+        <div class="carousel-item"><img src="smartmockups_l0a06ima.jpg" alt="smartmockups_l0a06ima"></div>
+        <div class="carousel-item"><img src="smartmockups_l0a0dq1s.jpg" alt="smartmockups_l0a0dq1s"></div>
+        <!-- Add more carousel items as needed -->
       </div>
-      <script>
-        const carousel = document.querySelector(".carousel");
-        let isDown = false;
-        let startX;
-        let scrollLeft;
-        carousel.addEventListener("mousedown", (e) => {
-          isDown = true;
-          startX = e.pageX - carousel.offsetLeft;
-          scrollLeft = carousel.scrollLeft;
-        });
-        carousel.addEventListener("mouseleave", () => {
-          isDown = false;
-        });
-        carousel.addEventListener("mouseup", () => {
-          isDown = false;
-        });
-        carousel.addEventListener("mousemove", (e) => {
-          if (!isDown) return;
-          e.preventDefault();
-          const x = e.pageX - carousel.offsetLeft;
-          const walk = x - startX;
-          carousel.scrollLeft = scrollLeft - walk;
-        });
-      </script>
+      <div class="buttons">
+        <button class="btn-back" onclick="scrollCarousel(-1)">Back</button>
+        <button class="btn-next" onclick="scrollCarousel(1)">Next</button>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const carousel = document.querySelector(".carousel");
+    const btnBack = document.querySelector(".btn-back");
+    const btnNext = document.querySelector(".btn-next");
+
+    let currentIndex = 0;
+
+    function scrollCarousel(direction) {
+      currentIndex += direction;
+      const newPosition = currentIndex * carousel.offsetWidth;
+      carousel.scrollTo({
+        left: newPosition,
+        behavior: "smooth"
+      });
+
+      // Update button visibility based on the current index
+      btnBack.disabled = currentIndex === 0;
+      btnNext.disabled = currentIndex === carousel.children.length - 1;
+    }
+  </script>
+</body>
+</html>
