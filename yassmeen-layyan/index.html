@@ -95,7 +95,7 @@
             text-align: center;
             background-color: #4a90e2;
             color: #fff;
-            padding: 5px 0; /* Adjusted padding */
+            padding: 10px 0;
             position: fixed;
             bottom: 0;
             width: 100%;
@@ -121,14 +121,20 @@
             margin-bottom: 10px;
         }
 
+        .hobby-genres {
+            margin-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
         .hobby-genre {
-            display: inline-block;
-            background-color: #f6f6f6; /* Same as page background */
-            color: #333; /* Text color */
-            padding: 6px 12px; /* Smaller padding */
-            border-radius: 10px; /* Rounded corners */
+            background-color: #fff;
+            color: #333;
+            padding: 6px 12px;
+            border-radius: 10px;
             margin-right: 10px;
-            border: 2px solid #4a90e2; /* Blue border */
+            margin-bottom: 10px;
+            border: 2px solid #4a90e2;
         }
 
         /* Profile Picture Styling */
@@ -136,15 +142,15 @@
             width: 200px;
             height: auto;
             border-radius: 50%;
-            border: 2px solid #4a90e2; /* Thin border */
+            border: 3px solid #4a90e2;
             margin: 0 auto 20px;
             display: block;
         }
 
         .picture-frame {
-            border: 2px solid #4a90e2; /* Thin border */
+            border: 3px solid #4a90e2;
             border-radius: 15px;
-            padding: 3px; /* Adjusted padding */
+            padding: 5px;
             display: inline-block;
         }
     </style>
@@ -170,8 +176,8 @@
 
     <section>
         <h2 class="blue-text">Hobbies</h2>
-        <div>
-            <p class="hobby-title">Watching Movies</p>
+        <p class="hobby-title">Watching Movies</p>
+        <div class="hobby-genres">
             <span class="hobby-genre">Comedy <span class="emoji">😂</span></span>
             <span class="hobby-genre">Romance <span class="emoji">❤️</span></span>
             <span class="hobby-genre">Sci-Fi <span class="emoji">🛸</span></span>
@@ -182,4 +188,34 @@
 
     <section>
         <h2 class="blue-text">Work Experience</h2>
-        <
+        <ul>
+            <li>Content Processing Operator</li>
+            <li>Data Manager</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="blue-text">Education</h2>
+        <ul>
+            <li>Master Content Strategy</li>
+            <li>Bachelor English and Turkish Literature</li>
+        </ul>
+    </section>
+
+    <div class="module-contact">
+        <section>
+            <h2 class="blue-text">Say Hello <span class="emoji">👋🏻</span></h2>
+            <div class="buttons-inline">
+                <a class="custom-button" target="_blank" href="https://www.linkedin.com/in/yasmeen-alayyan-286bb8139/">LinkedIn</a>
+                <a class="custom-button" href="mailto:yasmeenk_alayyan@hotmail.com">Email Me</a>
+                <a class="custom-button" href="tel:+4368184042009">Let's Talk</a>
+            </div>
+        </section>
+    </div>
+
+    <p class="interests">Feel free to reach out for a chat about movies or anything else! 🍿</p>
+</main>
+
+<footer>
+    <p>Yasmeen Alayyan<br>8010 Graz</p>
+</
