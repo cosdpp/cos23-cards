@@ -10,11 +10,11 @@
       padding: 0;
       box-sizing: border-box;
       background-color: #fff;
-      color: #1e1e1e;
+      color: #333;
     }
 
     header {
-      background-color: #1975FF;
+      background-color: #0e0e0e;
       padding: 20px;
       text-align: center;
       color: #fff;
@@ -28,9 +28,8 @@
     header img {
       max-width: 100%;
       height: auto;
-      border-radius: 8px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      margin-top: 20px;
     }
 
     main {
@@ -39,7 +38,7 @@
       padding: 20px;
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-      border-radius: 8px;
+      border-radius: 10px;
     }
 
     section {
@@ -47,14 +46,22 @@
     }
 
     h2 {
-      color: #1e1e1e;
+      color: #0e0e0e;
       margin-bottom: 15px;
       font-family: 'Arial', sans-serif;
+      font-size: 1.5em; /* Adjusted font size */
     }
 
     p {
       line-height: 1.6;
-      color: #555;
+      color: #666;
+      font-size: 16px; /* Adjusted font size */
+    }
+
+    h3 b {
+      font-weight: bold;
+      color: #1e90ff; /* Dark Blue for emphasis */
+      font-size: 1.2em; /* Adjusted font size */
     }
 
     ul {
@@ -64,7 +71,7 @@
 
     li {
       margin-bottom: 8px;
-      color: #1e1e1e;
+      color: #0e0e0e;
     }
 
     .buttons {
@@ -77,36 +84,48 @@
     .btn-next {
       padding: 10px 20px;
       cursor: pointer;
-      background-color: #1975FF;
+      background-color: #0e0e0e;
       color: #fff;
       border: none;
       border-radius: 5px;
       transition: background-color 0.3s ease;
+      font-size: 16px; /* Adjusted font size */
     }
 
     .btn-back:disabled,
     .btn-next:disabled {
-      background-color: #c1c1c1;
+      background-color: #666;
       cursor: not-allowed;
     }
 
     .btn-back:hover,
     .btn-next:hover {
-      background-color: #0056b3;
+      background-color: #333;
+    }
+
+    /* Additional styling for links */
+    a {
+      color: #1e90ff; /* Dark Blue for links */
+      text-decoration: underline;
+      font-size: 16px; /* Adjusted font size */
+    }
+
+    a:hover {
+      color: #0d47a1; /* Darker Blue on hover */
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Georgiana</h1>
-    <img src="IMG_20230802_141732.jpg" width="50%" alt="IMG_20230802_141732">
+    <img src="IMG_20230802_141732.jpg" width="20%" height="30%" alt="IMG_20230802_141732">
   </header>
   <main>
     <section aria-labelledby="bio-heading">
       <h2 id="bio-heading">Bio</h2>
       <p>'I'd like to take a minute Just sit right there' and tell you how I came to content strategy.</p>
-      <h3><b>Crafting the perfect story for end users is key in connecting with users.</b></h3>
-      <p>With my expertise in crafting user-centric stories and solving content issues, I create user guides, knowledge base articles, UX writing, and microcopies to place the user at the center of any creation. To enhance my ability to craft exceptional user experiences, I am obtaining a Masters in Content Strategy. In addition to using storytelling techniques, I also have a deep understanding of content strategy, making it possible for me to help businesses connect meaningfully with their target audience.</p>
+      <h3><b>Crafting the perfect story for end users is key in connecting with users.</b></h3>With my expertise in crafting user-centric stories and solving content issues, I create user guides, knowledge base articles, UX writing, and microcopies to place the user at the center of any creation. To enhance my ability to craft exceptional user experiences, I am obtaining a Masters in Content Strategy. In addition to using storytelling techniques, I also have a deep understanding of content strategy, making it possible for me to help businesses connect meaningfully with their target audience.
     </section>
     <section aria-labelledby="hobbies-heading">
       <h2 id="hobbies-heading">Hobbies</h2>
