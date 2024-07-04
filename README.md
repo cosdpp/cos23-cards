@@ -11,7 +11,6 @@
 * [jasmin-dhanani/](https://cosdpp.github.io/cos23-cards/jasmin-dhanani/)
 * [johanna-fruth/](https://cosdpp.github.io/cos23-cards/johanna-fruth/)
 * [katja-horvath/](https://cosdpp.github.io/cos23-cards/katja-horvath/)
-* [laura-schutti/](https://cosdpp.github.io/cos23-cards/laura-schutti/)
 * [laura-wassertheurer/](https://cosdpp.github.io/cos23-cards/laura-wassertheurer/)
 * [lisa-huber/](https://cosdpp.github.io/cos23-cards/lisa-huber/)
 * [liubov-fridrikh/](https://cosdpp.github.io/cos23-cards/liubov-fridrikh/)
